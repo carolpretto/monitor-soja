@@ -1,0 +1,26 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Distrito Federal,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,25.664458410644535
+Distrito Federal,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,83.8168275089279
+Distrito Federal,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,142.63586500244114
+Distrito Federal,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,3.2724068603515626
+Distrito Federal,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,26.695190771484377
+Distrito Federal,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,1608.5896142303586
+Distrito Federal,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,3553.2771435519785
+Distrito Federal,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,5.598319818115234
+Distrito Federal,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,99.3446459045411
+Distrito Federal,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,0.5164108154296875
+Distrito Federal,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,285.31663561401393
+Distrito Federal,Virou soja (origem = uso no ano de origem),46.0,Café,2024,2025.0,47.08129108886749
+Distrito Federal,Virou soja (origem = uso no ano de origem),48.0,Outras Lavouras Perenes,2024,2025.0,0.2580027099609375
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,4.046380462646484
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,5.425549291992187
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,0.08622064208984374
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,0.7750285095214844
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,0.6885325439453125
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,161.5391224242925
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,177.74377859805836
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,7.233370068359375
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,6.894326220703125
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,0.08600328369140625
+Distrito Federal,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,7.318431604003907
+Distrito Federal,Permaneceu soja,39.0,Soja,2024,2025.0,105399.35106218733

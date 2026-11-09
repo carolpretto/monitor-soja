@@ -1,0 +1,12 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2023,2024.0,1.9014812255859375
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2023,2024.0,0.8259349975585937
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2023,2024.0,0.4964787109375
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2023,2024.0,3.1413317382812496
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2023,2024.0,223.09083552246094
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2023,2025.0,0.08273406982421876
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2023,2025.0,13.403353009033205
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2023,2025.0,6.532763598632814
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2023,2025.0,0.4964787109375
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2023,2025.0,3.471571923828125
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2023,2025.0,222.76059533691407

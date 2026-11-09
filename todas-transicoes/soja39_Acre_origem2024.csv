@@ -1,0 +1,7 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,1.936172412109375
+Acre,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,0.4400640075683594
+Acre,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,0.6169409545898437
+Acre,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,0.35254915771484374
+Acre,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,0.5278878845214844
+Acre,Permaneceu soja,39.0,Soja,2024,2025.0,7973.498574048368

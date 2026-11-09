@@ -1,0 +1,160 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2011.0,20.767974100461473
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2011.0,4.219214575195314
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2011.0,3.474892199707031
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2010,2011.0,0.08273438720703125
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2011.0,15.633865258789065
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2011.0,1.406362353515625
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2011.0,4.55066154785156
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2011.0,17.784967010498043
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2012.0,0.16554613037109372
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2012.0,34.25558277355718
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2012.0,4.301936968994141
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2012.0,4.964180560302733
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2010,2012.0,0.08273438720703125
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2012.0,25.2316670349121
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2012.0,2.3988605529785154
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2012.0,3.475130279541016
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2012.0,8.270198303222656
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2013.0,5.377030694580081
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2013.0,37.23164281384037
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2013.0,3.30861376953125
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2013.0,4.881521569824218
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2013.0,25.39649421997069
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2013.0,1.9853503601074218
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2013.0,5.543927014160154
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2013.0,6.532818963623048
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2014.0,11.331760089111334
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2010,2014.0,0.08274479370117188
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2014.0,152.66017978283455
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2014.0,7.361237231445312
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2014.0,4.219718280029296
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2014.0,26.634883654785153
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2014.0,1.7371232177734375
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2014.0,5.626678271484373
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2014.0,5.45990541381836
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2015.0,0.3302028564453125
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2015.0,14.39144661254884
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2010,2015.0,0.08274479370117188
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2015.0,286.0146813950243
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2015.0,16.62540709838867
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2015.0,0.24764581909179686
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2015.0,8.27327745361328
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2010,2015.0,0.08273359985351562
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2015.0,23.408556127929685
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2015.0,0.6619561645507812
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2015.0,3.8066019714355472
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2015.0,11.498742694091804
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2016.0,0.24765222167968748
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2016.0,13.728869812011727
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2016.0,312.6533947617236
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2016.0,19.107136840820313
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2016.0,0.7429361877441407
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2016.0,7.859934484863281
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2016.0,24.898233685302735
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2016.0,0.6619561645507812
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2016.0,3.226844342041015
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2016.0,10.671556365966804
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2017.0,3.306654754638671
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2017.0,20.261302355957042
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2017.0,293.75846328125016
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2017.0,17.20249500732422
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2017.0,1.733524743652344
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2017.0,5.872774969482422
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2017.0,23.574882189941405
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2017.0,1.6545107666015624
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2017.0,7.363436871337889
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2017.0,6.865760729980468
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2018.0,3.96812589111328
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2018.0,19.678847888183594
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2018.0,295.2276851379396
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2018.0,10.583341778564453
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2018.0,2.4764669982910164
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2018.0,5.621836846923829
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2018.0,24.980748522949217
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2018.0,1.406498107910156
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2018.0,6.3699457092285146
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2018.0,6.701398217773438
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2019.0,3.5545879821777335
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2019.0,21.41293523559569
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2019.0,253.953729486084
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2019.0,7.5239215576171885
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2019.0,5.448255871582025
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2019.0,12.152774908447263
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2019.0,27.627721905517575
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2019.0,1.902662420654297
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2019.0,3.640346020507813
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2019.0,6.287860211181639
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2020.0,2.3971953552246092
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2020.0,18.271617474365232
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2020.0,176.29607786865236
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2020.0,8.269095959472658
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2020.0,5.613356335449212
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2020.0,13.890427032470702
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2020.0,27.95819291381836
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2020.0,2.068150128173828
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2010,2020.0,0.0827441650390625
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2020.0,2.812641400146484
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2020.0,6.536861950683592
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2021.0,2.4799295776367187
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2021.0,18.18906749877929
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2021.0,173.8146291687012
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2021.0,8.103500927734377
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2021.0,5.1180637390136665
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2021.0,13.890427032470702
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2021.0,28.454416546630856
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2021.0,1.571905517578125
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2010,2021.0,0.24823265380859377
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2021.0,2.812641400146484
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2021.0,6.371394439697264
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2022.0,2.4799295776367187
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2022.0,18.189288311767573
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2022.0,173.48620881347657
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2022.0,8.186277075195315
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2022.0,5.1180637390136665
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2022.0,13.890427032470702
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2010,2022.0,1.4866546325683598
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2022.0,26.88499614257812
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2022.0,1.7373840698242184
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2010,2022.0,0.4137214599609375
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2022.0,2.812641400146484
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2022.0,6.123192852783202
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2023.0,2.3144617553710938
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2023.0,18.35470260620117
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2023.0,172.24526771850586
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2023.0,8.434329626464844
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2023.0,5.1180637390136665
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2023.0,13.973160473632811
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2010,2023.0,0.08273359985351562
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2010,2023.0,1.4866546325683598
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2023.0,26.223059368896482
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2023.0,1.9856315551757815
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2010,2023.0,0.5792099487304687
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2023.0,2.812641400146484
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2023.0,6.288660052490233
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2024.0,2.231828875732422
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2024.0,18.437471820068357
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2024.0,171.3345157348633
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2024.0,8.517103442382815
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2024.0,5.118060540771479
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2024.0,13.890611279296873
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2010,2024.0,0.08273359985351562
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2010,2024.0,1.4866546325683598
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2024.0,26.223059368896482
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2024.0,1.5719086669921873
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2010,2024.0,0.9929328369140625
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2024.0,2.812641400146484
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2024.0,6.288660052490233
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2010,2025.0,2.3145627868652343
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2010,2025.0,18.520141369628906
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2010,2025.0,188.54309752197267
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2010,2025.0,8.434508758544924
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2010,2025.0,4.705316333007809
+Rio De Janeiro,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2010,2025.0,13.97315919189453
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2010,2025.0,0.08273359985351562
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2010,2025.0,1.4866546325683598
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2010,2025.0,26.057570245361326
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2010,2025.0,0.9926966674804686
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2010,2025.0,1.7376339599609383
+Rio De Janeiro,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2010,2025.0,2.812641400146484
+Rio De Janeiro,Permaneceu soja,39.0,Soja,2010,2025.0,6.288660052490233

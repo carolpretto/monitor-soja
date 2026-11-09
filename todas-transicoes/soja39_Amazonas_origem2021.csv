@@ -1,0 +1,32 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Amazonas,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2021,2022.0,1.3260205871582031
+Amazonas,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2021,2022.0,226.76444676046884
+Amazonas,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2021,2022.0,0.176283837890625
+Amazonas,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2021,2022.0,173.14652907714805
+Amazonas,Permaneceu soja,39.0,Soja,2021,2022.0,152.18930893554656
+Amazonas,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2021,2023.0,0.176794482421875
+Amazonas,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2021,2023.0,1.3260205871582031
+Amazonas,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2021,2023.0,632.3758809118152
+Amazonas,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2021,2023.0,0.176283837890625
+Amazonas,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2021,2023.0,244.68496595458964
+Amazonas,Permaneceu soja,39.0,Soja,2021,2023.0,152.18930893554656
+Amazonas,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2021,2024.0,0.35382935791015624
+Amazonas,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2021,2024.0,0.531092529296875
+Amazonas,Virou soja (origem = uso no ano de origem),6.0,Floresta Alagável,2021,2024.0,1.5049307678222656
+Amazonas,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2021,2024.0,10.090819531249998
+Amazonas,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2021,2024.0,2.919316674804687
+Amazonas,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2021,2024.0,709.4394131505812
+Amazonas,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2021,2024.0,1.2393750793457032
+Amazonas,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2021,2024.0,0.176283837890625
+Amazonas,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2021,2024.0,255.35761994018526
+Amazonas,Permaneceu soja,39.0,Soja,2021,2024.0,152.18930893554656
+Amazonas,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2021,2025.0,0.35382935791015624
+Amazonas,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2021,2025.0,0.531092529296875
+Amazonas,Virou soja (origem = uso no ano de origem),6.0,Floresta Alagável,2021,2025.0,1.5049307678222656
+Amazonas,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2021,2025.0,11.064499798583988
+Amazonas,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2021,2025.0,2.919316674804687
+Amazonas,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2021,2025.0,713.857694315132
+Amazonas,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2021,2025.0,1.2393750793457032
+Amazonas,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2021,2025.0,0.176283837890625
+Amazonas,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2021,2025.0,255.35761994018526
+Amazonas,Permaneceu soja,39.0,Soja,2021,2025.0,152.18930893554656

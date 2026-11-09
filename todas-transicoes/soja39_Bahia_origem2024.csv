@@ -1,0 +1,30 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Bahia,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,7.943539605712891
+Bahia,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,609.7600278277235
+Bahia,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,162.59884353027343
+Bahia,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,0.43723665161132813
+Bahia,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,47.05466707153321
+Bahia,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,4961.6627939715345
+Bahia,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,15952.294627462135
+Bahia,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,0.17489990234375
+Bahia,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,327.4644625113933
+Bahia,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,4.193068481445312
+Bahia,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,16064.430379382897
+Bahia,Virou soja (origem = uso no ano de origem),46.0,Café,2024,2025.0,4.372895184326172
+Bahia,Virou soja (origem = uso no ano de origem),48.0,Outras Lavouras Perenes,2024,2025.0,6.457989123535157
+Bahia,Virou soja (origem = uso no ano de origem),62.0,Algodão (beta),2024,2025.0,81915.15151551095
+Bahia,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,7.681396142578125
+Bahia,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,277.25577230966616
+Bahia,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,1.6556118652343748
+Bahia,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,0.34918078002929687
+Bahia,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,21.326171216179343
+Bahia,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,364.98055075073245
+Bahia,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,1077.7927967028334
+Bahia,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,19.569247552490236
+Bahia,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,20.559373468017576
+Bahia,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,3.5714048583984375
+Bahia,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,1061.7461723140705
+Bahia,Deixou de ser soja (destino = uso no ano de destino),46.0,Café,2024,2025.0,1.049657940673828
+Bahia,Deixou de ser soja (destino = uso no ano de destino),48.0,Outras Lavouras Perenes,2024,2025.0,2.1835581237792967
+Bahia,Deixou de ser soja (destino = uso no ano de destino),62.0,Algodão (beta),2024,2025.0,192978.62534493994
+Bahia,Permaneceu soja,39.0,Soja,2024,2025.0,2192537.9259407083

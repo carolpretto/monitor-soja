@@ -1,0 +1,35 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Minas Gerais,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,202.0994771318981
+Minas Gerais,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,329.62989832763657
+Minas Gerais,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,154.85063773803765
+Minas Gerais,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,28.26136623535157
+Minas Gerais,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,81.58993448455209
+Minas Gerais,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,2126.2740982015207
+Minas Gerais,Virou soja (origem = uso no ano de origem),20.0,Cana,2024,2025.0,10.565316764466527
+Minas Gerais,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,4236.794224432942
+Minas Gerais,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,0.33767116088867183
+Minas Gerais,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,36.17440634155273
+Minas Gerais,Virou soja (origem = uso no ano de origem),30.0,Mineração,2024,2025.0,0.16799896850585938
+Minas Gerais,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,16.384253717041013
+Minas Gerais,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,3012.008668750727
+Minas Gerais,Virou soja (origem = uso no ano de origem),46.0,Café,2024,2025.0,4.81711953125
+Minas Gerais,Virou soja (origem = uso no ano de origem),47.0,Citrus,2024,2025.0,0.7615416748046875
+Minas Gerais,Virou soja (origem = uso no ano de origem),48.0,Outras Lavouras Perenes,2024,2025.0,7.773430987548827
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,103.23177786865232
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,87.09152406276331
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,1.9515434448242188
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,23.843784552001946
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,9.083331219482421
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,2106.809591985533
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),20.0,Cana,2024,2025.0,130.27810482177733
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,2543.3444393951545
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,37.67680704355277
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,4.200055554199219
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),30.0,Mineração,2024,2025.0,0.08500110473632813
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,8.916558502197265
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,600.2824990772442
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),46.0,Café,2024,2025.0,7.60857651977539
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),47.0,Citrus,2024,2025.0,0.8469361022949219
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),62.0,Algodão (beta),2024,2025.0,3.10864779663086
+Minas Gerais,Deixou de ser soja (destino = uso no ano de destino),75.0,Usina Fotovoltaica,2024,2025.0,80.09198356933588
+Minas Gerais,Permaneceu soja,39.0,Soja,2024,2025.0,1870411.585543472

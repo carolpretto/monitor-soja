@@ -1,0 +1,27 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2001,2020.0,15.224578179931648
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2001,2021.0,169.71585821533225
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2001,2021.0,665.5454634730688
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2001,2021.0,7.742423333740232
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2001,2021.0,1.9373018493652343
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2001,2022.0,386.0061977478027
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2001,2022.0,2332.805872903004
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2001,2022.0,27.636331931511364
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2001,2022.0,8.893737371826171
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2001,2022.0,3.348322229003908
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2001,2023.0,476.5627762939455
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2001,2023.0,5401.523882583181
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2001,2023.0,29.747187204948872
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2001,2023.0,16.725755822753907
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2001,2023.0,3.348322229003908
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2001,2024.0,654.8796640075693
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2001,2024.0,7259.5557309474225
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2001,2024.0,35.909732181755516
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2001,2024.0,21.654446350097654
+Acre,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2001,2024.0,0.0881203369140625
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2001,2024.0,3.348322229003908
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2001,2025.0,654.8796484436043
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2001,2025.0,7259.378414211582
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2001,2025.0,35.90973218175551
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2001,2025.0,21.918629394531248
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2001,2025.0,3.348322229003908

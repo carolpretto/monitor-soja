@@ -1,0 +1,37 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Parana,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,502.79304765735094
+Parana,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,2109.5695554110657
+Parana,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,49.98149220581053
+Parana,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,81.9162258057598
+Parana,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,12540.370954739605
+Parana,Virou soja (origem = uso no ano de origem),20.0,Cana,2024,2025.0,15278.84234042834
+Parana,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,50860.178598496386
+Parana,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,19.02064985971488
+Parana,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,47.90173477172853
+Parana,Virou soja (origem = uso no ano de origem),29.0,Afloramento Rochoso,2024,2025.0,0.24470872802734375
+Parana,Virou soja (origem = uso no ano de origem),31.0,Aquicultura,2024,2025.0,1.060657452392578
+Parana,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,88.86146300194834
+Parana,Virou soja (origem = uso no ano de origem),40.0,Arroz,2024,2025.0,96.84182709350581
+Parana,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,6527.0049294782075
+Parana,Virou soja (origem = uso no ano de origem),46.0,Café,2024,2025.0,680.5822619548244
+Parana,Virou soja (origem = uso no ano de origem),47.0,Citrus,2024,2025.0,183.23934560546857
+Parana,Virou soja (origem = uso no ano de origem),48.0,Outras Lavouras Perenes,2024,2025.0,97.23860693969732
+Parana,Virou soja (origem = uso no ano de origem),49.0,Restinga Arbórea,2024,2025.0,0.32351881713867187
+Parana,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,455.37098816296145
+Parana,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,0.3268798095703125
+Parana,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,278.60846928110163
+Parana,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,86.21988875732421
+Parana,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,26.52230629882813
+Parana,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,4393.946397735358
+Parana,Deixou de ser soja (destino = uso no ano de destino),20.0,Cana,2024,2025.0,55.57450056762697
+Parana,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,8132.60325542203
+Parana,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,573.0452131057082
+Parana,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,59.190744439697255
+Parana,Deixou de ser soja (destino = uso no ano de destino),29.0,Afloramento Rochoso,2024,2025.0,0.32627713012695314
+Parana,Deixou de ser soja (destino = uso no ano de destino),30.0,Mineração,2024,2025.0,13.136630065917972
+Parana,Deixou de ser soja (destino = uso no ano de destino),31.0,Aquicultura,2024,2025.0,19.737519989013673
+Parana,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,83.93988792255477
+Parana,Deixou de ser soja (destino = uso no ano de destino),40.0,Arroz,2024,2025.0,228.37081171264654
+Parana,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,137.4795372863769
+Parana,Deixou de ser soja (destino = uso no ano de destino),46.0,Café,2024,2025.0,6.970822137451172
+Parana,Permaneceu soja,39.0,Soja,2024,2025.0,5934074.447079701

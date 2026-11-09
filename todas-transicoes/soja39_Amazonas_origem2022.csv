@@ -1,0 +1,25 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Amazonas,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2022,2023.0,0.176794482421875
+Amazonas,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2022,2023.0,383.9966268149243
+Amazonas,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2022,2023.0,93.59414009399404
+Amazonas,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2022,2023.0,0.3526897644042969
+Amazonas,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2022,2023.0,0.08820611572265626
+Amazonas,Permaneceu soja,39.0,Soja,2022,2023.0,553.1616933180863
+Amazonas,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2022,2024.0,0.176794482421875
+Amazonas,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2022,2024.0,0.531092529296875
+Amazonas,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2022,2024.0,9.47120930175781
+Amazonas,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2022,2024.0,0.17703330688476565
+Amazonas,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2022,2024.0,457.7257703696094
+Amazonas,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2022,2024.0,112.55839649658165
+Amazonas,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2022,2024.0,0.3526897644042969
+Amazonas,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2022,2024.0,0.08820611572265626
+Amazonas,Permaneceu soja,39.0,Soja,2022,2024.0,553.1616933180863
+Amazonas,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2022,2025.0,0.176794482421875
+Amazonas,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2022,2025.0,0.531092529296875
+Amazonas,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2022,2025.0,10.356373150634766
+Amazonas,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2022,2025.0,0.17703330688476565
+Amazonas,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2022,2025.0,462.232567952617
+Amazonas,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2022,2025.0,112.55839649658165
+Amazonas,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2022,2025.0,0.3526897644042969
+Amazonas,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2022,2025.0,0.08820611572265626
+Amazonas,Permaneceu soja,39.0,Soja,2022,2025.0,553.1616933180863

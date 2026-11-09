@@ -1,0 +1,32 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Tocantins,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,212.22082343958232
+Tocantins,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,501.0758672443705
+Tocantins,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,39.27912817382811
+Tocantins,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,28.063089425934432
+Tocantins,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,145.12242890624984
+Tocantins,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,4271.552449340005
+Tocantins,Virou soja (origem = uso no ano de origem),20.0,Cana,2024,2025.0,0.617735546875
+Tocantins,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,8093.2488741253255
+Tocantins,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,339.70698207397396
+Tocantins,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,6.145681225585936
+Tocantins,Virou soja (origem = uso no ano de origem),40.0,Arroz,2024,2025.0,520.5905005554177
+Tocantins,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,132.2085353515626
+Tocantins,Virou soja (origem = uso no ano de origem),62.0,Algodão (beta),2024,2025.0,205.15036458771283
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,158.43970621744793
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,69.86487662353517
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),6.0,Floresta Alagável,2024,2025.0,0.7101011718750001
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,1.2355390441894532
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,24.173310717773433
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,3.868824127197266
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,1809.2558805152569
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),20.0,Cana,2024,2025.0,37.51811779174805
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,1200.9907865250884
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,3.5133225952148437
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,12.064948183857037
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),29.0,Afloramento Rochoso,2024,2025.0,0.2635286193847656
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),31.0,Aquicultura,2024,2025.0,0.08781268920898437
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,2.8980089538574223
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),40.0,Arroz,2024,2025.0,8712.904924227121
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,16.36298701171875
+Tocantins,Deixou de ser soja (destino = uso no ano de destino),62.0,Algodão (beta),2024,2025.0,29.7338812866211
+Tocantins,Permaneceu soja,39.0,Soja,2024,2025.0,1161389.5285637483

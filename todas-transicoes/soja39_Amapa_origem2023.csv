@@ -1,0 +1,32 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Amapa,Virou soja (origem = uso no ano de origem),6.0,Floresta Alagável,2023,2024.0,0.26811907348632813
+Amapa,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2023,2024.0,0.6257410949707032
+Amapa,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2023,2024.0,5.184546032714843
+Amapa,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2023,2024.0,0.5362740539550781
+Amapa,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2023,2024.0,80.98249829285865
+Amapa,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2023,2024.0,8.223198651123047
+Amapa,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2023,2024.0,0.44698592529296877
+Amapa,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2023,2024.0,0.08939683837890625
+Amapa,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2023,2024.0,2.2348776916503907
+Amapa,Deixou de ser soja (destino = uso no ano de destino),6.0,Floresta Alagável,2023,2024.0,0.17876795654296876
+Amapa,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2023,2024.0,2.055945574951172
+Amapa,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2023,2024.0,9.206387817382812
+Amapa,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2023,2024.0,76.60360718288047
+Amapa,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2023,2024.0,0.08939308471679687
+Amapa,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2023,2024.0,0.7151552124023438
+Amapa,Permaneceu soja,39.0,Soja,2023,2024.0,15386.35408227808
+Amapa,Virou soja (origem = uso no ano de origem),6.0,Floresta Alagável,2023,2025.0,0.8938351989746094
+Amapa,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2023,2025.0,0.6257410949707032
+Amapa,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2023,2025.0,14.571028845214842
+Amapa,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2023,2025.0,0.5363018615722657
+Amapa,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2023,2025.0,112.53474204848344
+Amapa,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2023,2025.0,9.206846203613281
+Amapa,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2023,2025.0,0.44698592529296877
+Amapa,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2023,2025.0,32.71430443115234
+Amapa,Deixou de ser soja (destino = uso no ano de destino),6.0,Floresta Alagável,2023,2025.0,0.6256976806640624
+Amapa,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2023,2025.0,2.145226940917969
+Amapa,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2023,2025.0,22.43617584838867
+Amapa,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2023,2025.0,87.50763127956013
+Amapa,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2023,2025.0,0.08939672241210937
+Amapa,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2023,2025.0,0.08936892700195312
+Amapa,Permaneceu soja,39.0,Soja,2023,2025.0,15362.309841708007

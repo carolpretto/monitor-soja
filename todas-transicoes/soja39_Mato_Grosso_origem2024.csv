@@ -1,0 +1,35 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Mato Grosso,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,1781.499088714576
+Mato Grosso,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,1108.2423772140446
+Mato Grosso,Virou soja (origem = uso no ano de origem),6.0,Floresta Alagável,2024,2025.0,154.19765860066727
+Mato Grosso,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,1319.3670442626965
+Mato Grosso,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,264.3614993652819
+Mato Grosso,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,412.5024535888672
+Mato Grosso,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,127427.32466908988
+Mato Grosso,Virou soja (origem = uso no ano de origem),20.0,Cana,2024,2025.0,2243.3522996093825
+Mato Grosso,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,157454.44229583332
+Mato Grosso,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,19.45442844848633
+Mato Grosso,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,723.6323267349782
+Mato Grosso,Virou soja (origem = uso no ano de origem),29.0,Afloramento Rochoso,2024,2025.0,1.203266571044922
+Mato Grosso,Virou soja (origem = uso no ano de origem),30.0,Mineração,2024,2025.0,3.432612145996094
+Mato Grosso,Virou soja (origem = uso no ano de origem),31.0,Aquicultura,2024,2025.0,0.781921337890625
+Mato Grosso,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,24.148573871735216
+Mato Grosso,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,144147.4894241935
+Mato Grosso,Virou soja (origem = uso no ano de origem),62.0,Algodão (beta),2024,2025.0,10033.135099398234
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,406.6748602399042
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,236.48899037475582
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),6.0,Floresta Alagável,2024,2025.0,16.21241113281251
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,0.8598748779296874
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,52.662517333984376
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,19.73123068847657
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,5194.674189330677
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),20.0,Cana,2024,2025.0,17.259766937255858
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,5668.631473663214
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,109.5844490131453
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,94.3338793151855
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),29.0,Afloramento Rochoso,2024,2025.0,0.5150764587402343
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),30.0,Mineração,2024,2025.0,64.68008269538431
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),31.0,Aquicultura,2024,2025.0,4.432556420898438
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,41.919816918945294
+Mato Grosso,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,370.48369639026134
+Mato Grosso,Permaneceu soja,39.0,Soja,2024,2025.0,1.0913300937481645E7

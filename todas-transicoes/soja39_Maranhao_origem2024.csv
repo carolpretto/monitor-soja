@@ -1,0 +1,28 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Maranhao,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,625.9975939482325
+Maranhao,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,2468.0422087060097
+Maranhao,Virou soja (origem = uso no ano de origem),6.0,Floresta Alagável,2024,2025.0,0.08915883178710937
+Maranhao,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,405.0214631060895
+Maranhao,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,6.399215118408204
+Maranhao,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,286.8274537536621
+Maranhao,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,25440.047108724088
+Maranhao,Virou soja (origem = uso no ano de origem),20.0,Cana,2024,2025.0,1595.9450698227631
+Maranhao,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,36916.15340936052
+Maranhao,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,1.420162353515625
+Maranhao,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,1246.4024905959907
+Maranhao,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,2.929565167236328
+Maranhao,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,3335.512505733284
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,68.87531651642443
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,42.191754467773436
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,0.9803289855957031
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,1.8614742919921874
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,2.0458768798828126
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,1149.3383754164508
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),20.0,Cana,2024,2025.0,0.7110248229980469
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,1044.3136354322962
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,26.634854986572265
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,24.010727288818355
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),31.0,Aquicultura,2024,2025.0,0.8870862060546874
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,2.223370135498047
+Maranhao,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,18.934225274658203
+Maranhao,Permaneceu soja,39.0,Soja,2024,2025.0,1224405.508671449

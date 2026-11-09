@@ -1,0 +1,4 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Amazonas,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,0.6196156372070313
+Amazonas,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,4.772345794677733
+Amazonas,Permaneceu soja,39.0,Soja,2024,2025.0,1133.8019898046316

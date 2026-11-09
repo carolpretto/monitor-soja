@@ -1,0 +1,8 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Ceara,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,1.3385708557128906
+Ceara,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,4.530125537109374
+Ceara,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,1.509885516357422
+Ceara,Deixou de ser soja (destino = uso no ano de destino),5.0,Mangue,2024,2025.0,0.08928523559570313
+Ceara,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,0.17850279541015626
+Ceara,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,0.2678558959960938
+Ceara,Permaneceu soja,39.0,Soja,2024,2025.0,57.65465497436522

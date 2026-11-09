@@ -1,0 +1,35 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Goias,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,684.396315377437
+Goias,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,808.309449875608
+Goias,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,1812.261615889918
+Goias,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,132.59754078369147
+Goias,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,149.42159671630856
+Goias,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,23409.589096245407
+Goias,Virou soja (origem = uso no ano de origem),20.0,Cana,2024,2025.0,737.0255654644644
+Goias,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,40411.299330237445
+Goias,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,8.594154888916016
+Goias,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,1229.294893900052
+Goias,Virou soja (origem = uso no ano de origem),29.0,Afloramento Rochoso,2024,2025.0,0.17141129150390624
+Goias,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,34.877449930395954
+Goias,Virou soja (origem = uso no ano de origem),40.0,Arroz,2024,2025.0,209.60942650756752
+Goias,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,5121.032270391415
+Goias,Virou soja (origem = uso no ano de origem),46.0,Café,2024,2025.0,4.806120306396483
+Goias,Virou soja (origem = uso no ano de origem),47.0,Citrus,2024,2025.0,0.9435394958496092
+Goias,Virou soja (origem = uso no ano de origem),62.0,Algodão (beta),2024,2025.0,115.08216875610353
+Goias,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,295.8163360485121
+Goias,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,118.08790240557501
+Goias,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,2.31055444946289
+Goias,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,52.10429873046877
+Goias,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,12.164751110839843
+Goias,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,7578.384996761907
+Goias,Deixou de ser soja (destino = uso no ano de destino),20.0,Cana,2024,2025.0,400.76739642333973
+Goias,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,5274.391115520663
+Goias,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,129.80787881469726
+Goias,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,65.58275326693668
+Goias,Deixou de ser soja (destino = uso no ano de destino),29.0,Afloramento Rochoso,2024,2025.0,0.25651315917968753
+Goias,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,23.893194470214837
+Goias,Deixou de ser soja (destino = uso no ano de destino),40.0,Arroz,2024,2025.0,26.65170236206056
+Goias,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,210.59508043212884
+Goias,Deixou de ser soja (destino = uso no ano de destino),46.0,Café,2024,2025.0,0.3422636474609375
+Goias,Deixou de ser soja (destino = uso no ano de destino),62.0,Algodão (beta),2024,2025.0,106.79618350219731
+Goias,Permaneceu soja,39.0,Soja,2024,2025.0,4553975.713025526

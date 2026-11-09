@@ -1,0 +1,32 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Santa Catarina,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,112.33959840698243
+Santa Catarina,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,224.28074890754257
+Santa Catarina,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,3.7629735107421878
+Santa Catarina,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,84.66988287963866
+Santa Catarina,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,1961.142640280141
+Santa Catarina,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,6765.8016274537895
+Santa Catarina,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,11.243705041503906
+Santa Catarina,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,10.144937359020762
+Santa Catarina,Virou soja (origem = uso no ano de origem),30.0,Mineração,2024,2025.0,0.07862284545898438
+Santa Catarina,Virou soja (origem = uso no ano de origem),31.0,Aquicultura,2024,2025.0,0.1584310363769531
+Santa Catarina,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,36.51032147216797
+Santa Catarina,Virou soja (origem = uso no ano de origem),40.0,Arroz,2024,2025.0,308.65272962220416
+Santa Catarina,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,5028.126403680471
+Santa Catarina,Virou soja (origem = uso no ano de origem),48.0,Outras Lavouras Perenes,2024,2025.0,0.15771115722656248
+Santa Catarina,Virou soja (origem = uso no ano de origem),49.0,Restinga Arbórea,2024,2025.0,0.4705377502441406
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,118.47776779174804
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,97.73573494262696
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,2.3202383239746096
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,12.86461760253906
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,1113.4619816259524
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,1843.6884095701455
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,66.56771004028323
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,8.865113006591796
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),30.0,Mineração,2024,2025.0,0.16077848510742188
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),31.0,Aquicultura,2024,2025.0,0.3200228820800781
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,24.119954144287107
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),40.0,Arroz,2024,2025.0,41.35582655029296
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,129.70742123295804
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),49.0,Restinga Arbórea,2024,2025.0,0.078393017578125
+Santa Catarina,Deixou de ser soja (destino = uso no ano de destino),91.0,Parque eólico (beta),2024,2025.0,2.2437903015136715
+Santa Catarina,Permaneceu soja,39.0,Soja,2024,2025.0,714210.5115466756

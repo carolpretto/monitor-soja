@@ -1,0 +1,45 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Acre,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2021,2022.0,0.8792435607910156
+Acre,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2021,2022.0,0.7915040710449218
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2021,2022.0,1730.6002559671588
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2021,2022.0,1.1451898742675781
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2021,2022.0,1.1441388916015625
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2021,2022.0,179.89270569457994
+Acre,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2021,2022.0,0.17591527099609375
+Acre,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2021,2022.0,0.5277074768066405
+Acre,Permaneceu soja,39.0,Soja,2021,2022.0,844.2374241237031
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2021,2023.0,0.7035957458496093
+Acre,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2021,2023.0,21.012153643798833
+Acre,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2021,2023.0,2.0223276916503905
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2021,2023.0,4294.954312540646
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2021,2023.0,1.1451898742675781
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2021,2023.0,5.102509985351563
+Acre,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2021,2023.0,0.17582108154296874
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2021,2023.0,759.8753601501452
+Acre,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2021,2023.0,0.26387286987304687
+Acre,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2021,2023.0,1.7605205810546876
+Acre,Permaneceu soja,39.0,Soja,2021,2023.0,842.9166534205782
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2021,2024.0,2.8147273986816406
+Acre,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2021,2024.0,29.104637597656254
+Acre,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2021,2024.0,2.9907950866699218
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2021,2024.0,5908.202167569944
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2021,2024.0,1.1451898742675781
+Acre,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2021,2024.0,0.08796204833984375
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2021,2024.0,15.045479711914057
+Acre,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2021,2024.0,0.5276360961914063
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2021,2024.0,1171.8971601806654
+Acre,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2021,2024.0,0.26387286987304687
+Acre,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2021,2024.0,1.0569135131835938
+Acre,Permaneceu soja,39.0,Soja,2021,2024.0,843.6202604884493
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2021,2025.0,2.7267997131347657
+Acre,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2021,2025.0,29.104637597656254
+Acre,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2021,2025.0,2.9907950866699218
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2021,2025.0,5908.464807621215
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2021,2025.0,1.1451898742675781
+Acre,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2021,2025.0,0.08796204833984375
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2021,2025.0,15.045479711914057
+Acre,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2021,2025.0,0.17582108154296874
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2021,2025.0,1172.072993237306
+Acre,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2021,2025.0,0.26387286987304687
+Acre,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2021,2025.0,1.0569135131835938
+Acre,Permaneceu soja,39.0,Soja,2021,2025.0,843.6202604884494

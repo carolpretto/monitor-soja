@@ -1,0 +1,31 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Sao Paulo,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,94.8537969397212
+Sao Paulo,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,0.6664800354003907
+Sao Paulo,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,117.25185081176755
+Sao Paulo,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,24.627563226318358
+Sao Paulo,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,2578.2260474371437
+Sao Paulo,Virou soja (origem = uso no ano de origem),20.0,Cana,2024,2025.0,7175.765399584424
+Sao Paulo,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,6859.065522197179
+Sao Paulo,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,0.7447317321777344
+Sao Paulo,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,24.977865881347654
+Sao Paulo,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,27.99774933471679
+Sao Paulo,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,1579.9845134755797
+Sao Paulo,Virou soja (origem = uso no ano de origem),46.0,Café,2024,2025.0,9.431769799804687
+Sao Paulo,Virou soja (origem = uso no ano de origem),47.0,Citrus,2024,2025.0,12.881407348632811
+Sao Paulo,Virou soja (origem = uso no ano de origem),48.0,Outras Lavouras Perenes,2024,2025.0,47.13167819213869
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,50.67302164742264
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,3.720712915039062
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,63.015024890136715
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,17.683794305419934
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,903.760076795966
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),20.0,Cana,2024,2025.0,445.07046683349597
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,1985.5873664726944
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,184.9002587707519
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,4.447022229003907
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),31.0,Aquicultura,2024,2025.0,0.5774988891601562
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,27.977697058105477
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,251.08242336693857
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),46.0,Café,2024,2025.0,3.956804669189453
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),47.0,Citrus,2024,2025.0,14.29750464477539
+Sao Paulo,Deixou de ser soja (destino = uso no ano de destino),48.0,Outras Lavouras Perenes,2024,2025.0,1.078970147705078
+Sao Paulo,Permaneceu soja,39.0,Soja,2024,2025.0,1516949.2329609531

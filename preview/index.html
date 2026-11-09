@@ -1,0 +1,2255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Transições da Soja no Brasil</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* ============================================================
+   Identidade: papel off-white, tinta verde-floresta, highlight
+   amarelo-verde — estilo editorial de relatório (ref. WRI/LAPIG).
+   Tema único claro, comprometido (design deliberado).
+   ============================================================ */
+:root {
+  --paper: #f5f6f2;
+  --surface: #ffffff;
+  --surface-soft: #edf1eb;
+  --ink: #18362d;
+  --text: #33453d;
+  --muted: #5f7169;
+  --forest: #184b39;
+  --forest-dark: #10382b;
+  --accent-highlight: #dce89b;
+  --line: #d7ddd8;
+  --ok: #1f6f46;
+  --atencao: #c97320;
+  --vazio: #8f9d95;
+  --perm: #a9b3ab;
+  --radius: 6px;
+  --shadow-sm: 0 1px 3px rgba(16, 56, 43, 0.06);
+  --shadow-md: 0 12px 32px -16px rgba(16, 56, 43, 0.16);
+  --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  padding-left: max(18px, env(safe-area-inset-left, 0px));
+  padding-right: max(18px, env(safe-area-inset-right, 0px));
+}
+.wrap, .band-inner { max-width: 1180px; margin: 0 auto; }
+h1, h2, h3, h4, h5 { margin: 0; }
+h1, h2, h3, h4 { color: var(--ink); font-weight: 700; letter-spacing: -0.02em; text-wrap: balance; }
+p { margin: 0; }
+a { color: var(--forest); }
+.num { font-variant-numeric: tabular-nums; }
+.hint { font-size: 0.82rem; color: var(--muted); }
+
+/* --- nav --- */
+.site-nav {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30;
+  background: rgba(245, 246, 242, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.site-nav .band-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; min-height: 58px;
+}
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; font-size: 0.95rem; letter-spacing: -0.01em; white-space: nowrap; }
+.brand-mark {
+  width: 30px; height: 30px; border-radius: var(--radius);
+  background: var(--forest); color: var(--accent-highlight);
+  display: grid; place-items: center; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.02em;
+}
+.nav-links { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+.nav-links a {
+  color: var(--muted); text-decoration: none; font-size: 0.85rem; font-weight: 600;
+  padding: 6px 10px; border-radius: 4px; white-space: nowrap;
+}
+.nav-links a:hover { color: var(--forest); background: rgba(24, 75, 57, 0.06); }
+@media (max-width: 780px) { .nav-links a:not(.keep) { display: none; } }
+
+/* --- console de janela --- */
+.console {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + 58px); z-index: 25;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+.console .band-inner {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px;
+  padding-block: 14px 15px;
+}
+.console .lbl {
+  font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.09em;
+  color: var(--muted); white-space: nowrap;
+}
+.console .grp { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.console select {
+  font-family: var(--font); font-size: 1.08rem; font-weight: 800; color: var(--ink);
+  padding: 10px 36px 10px 14px; border-radius: 6px; border: 1px solid var(--line);
+  background: var(--surface-soft); min-width: 122px;
+}
+.console select:focus-visible, #uf-focus, a:focus-visible,
+#mapa-metrica:focus-visible { outline: 2px solid var(--forest); outline-offset: 2px; }
+.console .janela {
+  margin-left: auto; font-size: 0.8rem; font-weight: 700; color: var(--forest);
+  white-space: nowrap;
+}
+.console .janela small { display: block; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }
+@media (max-width: 760px) { .console .janela { margin-left: 0; } }
+
+/* --- hero --- */
+.hero { background: var(--forest-dark); color: #fff; }
+.hero .band-inner { padding-block: 64px 56px; position: relative; }
+.hero-eyebrow {
+  font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--accent-highlight); margin-bottom: 14px;
+}
+.hero-eyebrow::before { content: ""; display: inline-block; width: 28px; height: 3px; background: var(--accent-highlight); margin-right: 10px; vertical-align: middle; opacity: 0.9; }
+.hero h1 { color: #fff; font-size: clamp(1.9rem, 4.6vw, 3rem); font-weight: 800; letter-spacing: -0.03em; }
+.hero h1 span { font-size: 0.72em; font-weight: 600; color: #cfe0d5; display: block; margin-top: 4px; }
+.hero-desc { max-width: 660px; color: #b9cfc2; margin-top: 16px; font-size: 1rem; }
+.hero-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.hchip {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(220, 232, 155, 0.1); border: 1px solid rgba(220, 232, 155, 0.26);
+  color: #dfe9d5; font-size: 0.8rem; font-weight: 700; border-radius: 999px; padding: 6px 13px;
+}
+.hchip .sw { width: 10px; height: 10px; border-radius: 3px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 700; font-size: 0.88rem; text-decoration: none;
+  border-radius: 4px; padding: 12px 18px; transition: 0.22s cubic-bezier(.22, .61, .36, 1);
+}
+.btn-primary { background: var(--accent-highlight); color: var(--forest-dark); }
+.btn-primary:hover { background: #eef6c4; }
+.btn-ghost { background: rgba(220, 232, 155, 0.12); color: #fff; border: 1px solid rgba(220, 232, 155, 0.3); }
+.btn-ghost:hover { background: rgba(220, 232, 155, 0.2); }
+.hero-badge {
+  position: absolute; right: 18px; top: 56px;
+  background: var(--accent-highlight); color: var(--forest-dark);
+  border-radius: var(--radius); padding: 12px 16px; text-align: right;
+  box-shadow: var(--shadow-md); max-width: 210px;
+}
+.hero-badge strong { display: block; font-size: 1.7rem; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.hero-badge small { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+@media (max-width: 720px) { .hero-badge { position: static; margin-top: 24px; max-width: 100%; text-align: left; } }
+
+/* --- aviso inicial do console --- */
+.aviso {
+  position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+  z-index: 40; display: flex; align-items: flex-start; gap: 12px;
+  max-width: min(660px, calc(100vw - 28px));
+  background: var(--forest-dark); color: #fff; padding: 13px 15px 13px 14px;
+  border-radius: 10px; box-shadow: var(--shadow-md);
+  animation: avisoSubir 0.45s cubic-bezier(.22, .61, .36, 1);
+}
+.aviso[hidden] { display: none; }
+.aviso::after {
+  content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -9px;
+  border: 9px solid transparent; border-bottom-color: var(--forest-dark);
+}
+@keyframes avisoPisca {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(220, 232, 155, 0), var(--shadow-md); }
+  50% { box-shadow: 0 0 0 7px rgba(220, 232, 155, 0.5), var(--shadow-md); }
+}
+.aviso.pulsando { animation: avisoSubir 0.45s cubic-bezier(.22, .61, .36, 1), avisoPisca 1.05s ease-in-out 9 0.6s; }
+@keyframes avisoSubir { from { opacity: 0; transform: translate(-50%, 14px); } to { opacity: 1; transform: translate(-50%, 0); } }
+@media (prefers-reduced-motion: reduce) { .aviso { animation: none; } }
+.aviso-ball { width: 10px; height: 10px; border-radius: 50%; background: var(--accent-highlight); flex: none; margin-top: 6px; }
+.aviso-txt { margin: 0; font-size: 0.85rem; line-height: 1.55; color: #fff; }
+.aviso-txt strong { color: var(--accent-highlight); }
+.aviso-soft { display: block; font-size: 0.72rem; color: #9db8aa; margin-top: 2px; }
+#aviso-fechar {
+  border: 0; background: rgba(220, 232, 155, 0.14); color: #fff; font-size: 1rem; line-height: 1;
+  width: 28px; height: 28px; border-radius: 50%; cursor: pointer; flex: none;
+  display: grid; place-items: center; font-weight: 700;
+}
+#aviso-fechar:hover { background: rgba(220, 232, 155, 0.28); }
+
+/* --- directory --- */
+.directory { border-bottom: 1px solid var(--line); background: var(--surface); }
+.directory .band-inner { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+.dir-item {
+  display: grid; grid-template-columns: 32px 1fr 18px; align-items: center; gap: 12px;
+  padding: 18px 20px; text-decoration: none; color: var(--ink);
+  border-left: 1px solid var(--line); transition: background 0.22s;
+}
+.dir-item:first-child { border-left: none; }
+.dir-item[hidden] { display: none; }
+.nav-links a[hidden] { display: none; }
+.dir-item:hover { background: var(--surface-soft); }
+.dir-item .n { font-size: 0.85rem; font-weight: 800; color: var(--vazio); }
+.dir-item .t { font-size: 0.88rem; font-weight: 700; }
+.dir-item .a { color: var(--forest); font-weight: 700; text-align: right; }
+@media (max-width: 720px) {
+  .dir-item { border-left: none; border-top: 1px solid var(--line); }
+  .dir-item:first-child { border-top: none; }
+}
+
+/* --- seções --- */
+.section { padding: 56px 0; }
+.section--alt { background: var(--surface-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.section-eyebrow {
+  font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--muted); margin-bottom: 8px;
+}
+.section-eyebrow::before { content: ""; display: inline-block; width: 28px; height: 3px; background: var(--accent-highlight); margin-right: 10px; vertical-align: middle; }
+.section-title { font-size: clamp(1.35rem, 2.6vw, 1.8rem); }
+.section-desc { max-width: 760px; color: var(--muted); margin-top: 10px; font-size: 0.95rem; }
+
+/* --- stats / estrutura --- */
+.stats { display: grid; gap: 14px; margin-top: 28px; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); }
+.stat {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); padding: 18px 18px 16px;
+}
+.stat .v { font-size: 1.55rem; font-weight: 800; color: var(--ink); letter-spacing: -0.03em; line-height: 1.15; }
+.stat .v small { font-size: 0.95rem; font-weight: 700; color: var(--muted); }
+.stat .l { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-top: 6px; }
+.dataset-card {
+  margin-top: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); padding: 22px 24px;
+  display: grid; grid-template-columns: 1fr; gap: 20px;
+}
+@media (min-width: 780px) { .dataset-card { grid-template-columns: 1fr 2fr; } }
+.dataset-card[hidden] { display: none; }
+.dataset-card h3 { font-size: 1.05rem; }
+.dataset-card .sub { color: var(--muted); font-size: 0.88rem; margin-top: 6px; }
+.ds-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #e4efe0; color: var(--ok); font-size: 0.72rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.08em; border-radius: 999px; padding: 5px 12px;
+}
+.ds-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); }
+.cobertura { font-size: 0.88rem; }
+.cobertura-row { display: flex; align-items: center; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.cobertura-row:last-child { border-bottom: none; }
+.cobertura-row .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.dot-ok { background: var(--ok); } .dot-falta { background: var(--vazio); }
+.cobertura-row .lbl { font-weight: 600; color: var(--ink); min-width: 198px; }
+.cobertura-row .who { color: var(--muted); font-size: 0.84rem; text-align: right; flex: 1; }
+.track { height: 8px; border-radius: 999px; background: #dfe5df; margin-top: 4px; overflow: hidden; }
+.track .seg-ok { background: linear-gradient(90deg, var(--ink), #3b7a57); display: block; height: 100%; }
+
+/* --- ranking --- */
+.rank-legend { display: flex; flex-wrap: wrap; gap: 18px; margin: 18px 0 8px; font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+.rank-legend .key { display: inline-flex; align-items: center; gap: 7px; }
+.rank-legend .sw { width: 12px; height: 12px; border-radius: 3px; }
+.sw-virou { background: var(--forest); } .sw-deixou { background: var(--atencao); } .sw-perm { background: var(--perm); }
+.rank-list { margin-top: 6px; }
+.rank-row { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 16px; margin-top: 10px; }
+.rank-head { display: flex; align-items: baseline; gap: 12px; }
+.rank-head .uf { font-weight: 700; color: var(--ink); font-size: 0.92rem; }
+.rank-head .pos { font-size: 0.78rem; font-weight: 800; color: var(--vazio); min-width: 24px; }
+.rank-head .val { margin-left: auto; font-weight: 700; color: var(--ink); font-size: 0.92rem; white-space: nowrap; }
+.rank-head .val small { color: var(--muted); font-weight: 600; font-size: 0.78rem; }
+.bars { margin-top: 8px; display: grid; gap: 5px; }
+.bars .bar { height: 9px; border-radius: 3px; background: var(--forest); }
+.bars .bar.deixou { background: var(--atencao); height: 6px; }
+.bars .bar.perm { background: var(--perm); height: 6px; }
+.bar-track { display: flex; align-items: center; gap: 7px; }
+.bar-val { font-size: 0.68rem; font-weight: 700; color: var(--muted); white-space: nowrap; min-width: 52px; }
+.bar-stack { display: flex; height: 20px; border-radius: 3px; min-width: 2px; }
+.bar-stack .seg { position: relative; transition: filter 0.15s; }
+.bar-stack .seg:hover { filter: brightness(1.15); z-index: 3; }
+.bar-stack .seg::after {
+  content: attr(data-lbl); position: absolute; left: 50%; bottom: calc(100% + 7px);
+  transform: translateX(-50%); background: var(--forest-dark); color: #fff;
+  font-size: 0.68rem; font-weight: 700; padding: 3px 8px; border-radius: 4px;
+  white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.12s;
+  z-index: 5;
+}
+.bar-stack .seg:hover::after { opacity: 1; }
+.bar-stack .seg { min-width: 0; display: flex; align-items: center; justify-content: flex-end; padding-right: 6px; }
+.seg-rot { font-size: 0.64rem; font-weight: 800; color: #fff; white-space: nowrap; overflow: hidden; }
+.bar-zero-fill { background: var(--vazio); height: 6px; width: 100%; opacity: 0.35; border-radius: 3px; }
+.evo-readout { overflow-wrap: anywhere;
+  margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 18px; align-items: center;
+  font-size: 0.8rem; font-weight: 600; color: var(--muted);
+  background: var(--surface-soft); border-radius: 4px; padding: 8px 12px; min-height: 36px;
+}
+.evo-readout .ano { font-weight: 800; color: var(--ink); font-size: 0.88rem; }
+.evo-readout .swmini { width: 9px; height: 9px; border-radius: 2px; display: inline-block; margin-right: 5px; vertical-align: baseline; }
+.evo-col:hover .evo-zone i { filter: brightness(1.18); }
+.mini-evo .evo-readout { overflow-wrap: anywhere; margin-top: 8px; font-size: 0.72rem; min-height: 30px; }
+.mini-evo .evo-readout .ano { font-size: 0.8rem; }
+.evo-scale { margin-top: 10px; font-size: 0.72rem; font-weight: 700; color: var(--muted); }
+.rank-row.hl { border-color: var(--forest); background: #f3f7ef; box-shadow: inset 3px 0 0 var(--forest); margin-top: 10px; }
+.rank-empty { margin-top: 16px; padding: 20px 6px; color: var(--muted); font-size: 0.92rem; }
+
+/* --- composição --- */
+.comp-wrap { margin-top: 34px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 20px 22px; }
+.comp-wrap h3 { font-size: 1rem; }
+.comp-wrap .hint { font-size: 0.85rem; color: var(--muted); margin-top: 4px; }
+.comp-item2 + .comp-item2 { margin-top: 22px; }
+.stack { display: flex; height: 26px; border-radius: 4px; overflow: hidden; background: var(--surface-soft); }
+.stack .seg { min-width: 0; box-shadow: inset 0 0 0 1px rgba(16, 56, 43, 0.16); }
+
+.comp-legend { display: grid; gap: 6px; margin-top: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.comp-item { display: flex; align-items: center; gap: 9px; font-size: 0.84rem; }
+.comp-item .sw { width: 11px; height: 11px; border-radius: 3px; flex: none; }
+.comp-item .nm { color: var(--ink); font-weight: 600; min-width: 0; }
+.comp-item .pv { margin-left: auto; color: var(--muted); white-space: nowrap; }
+
+/* --- mapa --- */
+.map-wrap {
+  margin-top: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); padding: 20px 22px;
+  display: grid; grid-template-columns: minmax(280px, 1fr) 280px; gap: 26px;
+}
+@media (max-width: 900px) { .map-wrap { grid-template-columns: 1fr; } }
+.map-plot { position: relative; }
+#brazil-map svg { width: 100%; height: auto; display: block; }
+#brazil-map path { stroke: var(--paper); stroke-width: 0.6; cursor: pointer; transition: fill 0.18s linear; }
+#brazil-map path:hover { stroke: var(--ink); stroke-width: 1.1; }
+#brazil-map path.sel { stroke: var(--ink); stroke-width: 1.3; }
+#brazil-map path.cmp { stroke: var(--atencao); stroke-width: 1.1; }
+.map-tip {
+  position: absolute; pointer-events: none; z-index: 5;
+  background: var(--forest-dark); color: #fff; padding: 10px 13px; border-radius: 6px;
+  font-size: 0.78rem; line-height: 1.5; box-shadow: var(--shadow-md);
+  opacity: 0; transform: translate(-50%, calc(-100% - 10px)); transition: opacity 0.15s;
+  max-width: 250px; white-space: nowrap;
+}
+.map-tip .t-nome { font-weight: 800; font-size: 0.84rem; }
+.map-tip .t-metrica { color: var(--accent-highlight); font-weight: 700; }
+.map-side .lbl2 {
+  display: block; font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--muted); margin-bottom: 6px;
+}
+#mapa-metrica {
+  font-family: var(--font); font-size: 0.9rem; font-weight: 600; color: var(--ink);
+  padding: 8px 10px; border-radius: 4px; border: 1px solid var(--line); background: var(--surface-soft);
+  width: 100%;
+}
+.map-legend { margin-top: 16px; }
+.map-legend .grad { height: 12px; border-radius: 999px; background: var(--surface-soft); }
+.map-legend .grad-lbls { display: flex; justify-content: space-between; font-size: 0.72rem; font-weight: 700; color: var(--muted); margin-top: 4px; }
+.map-side .hint { margin-top: 14px; }
+.map-top { list-style: none; margin: 14px 0 0; padding: 0; font-size: 0.84rem; }
+.map-top li { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+.map-top li:last-child { border-bottom: none; }
+.map-top .pos { color: var(--vazio); font-weight: 800; }
+.map-top .uf { font-weight: 700; color: var(--ink); }
+.map-top .v { margin-left: auto; color: var(--muted); white-space: nowrap; }
+.map-wrap--g { margin-top: 40px; }
+.sub-map { margin-top: 40px; }
+.g-leg { list-style: none; margin: 12px 0 0; padding: 0; font-size: 0.84rem; }
+.g-leg li { display: flex; align-items: center; gap: 9px; padding: 6px 0; border-bottom: 1px dashed var(--line); }
+.g-leg li:last-child { border-bottom: none; }
+.g-leg .sw { width: 12px; height: 12px; border-radius: 3px; flex: none; }
+.g-leg .nm { color: var(--ink); font-weight: 600; min-width: 0; }
+.g-leg .pv { margin-left: auto; color: var(--muted); white-space: nowrap; text-align: right; }
+
+/* --- mini-mapas dos grupos --- */
+.grupos-grid { display: grid; gap: 14px; margin-top: 16px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.mini-map { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 14px 16px 10px; overflow-wrap: anywhere; min-width: 0; }
+.mini-map h4 { font-size: 0.92rem; line-height: 1.3; }
+.mini-map .mm-plot { position: relative; margin-top: 8px; }
+.mini-map .bmap svg { width: 100%; height: auto; display: block; }
+.mini-map .bmap path { stroke: var(--surface); stroke-width: 0.6; cursor: pointer; transition: fill 0.15s; }
+.mini-map .bmap path:hover { stroke: var(--ink); stroke-width: 1.1; }
+.mini-map .scale { display: flex; align-items: center; gap: 8px; margin-top: 8px; font-size: 0.7rem; font-weight: 700; color: var(--muted); }
+.mini-map .scale .grad { flex: 1; height: 8px; border-radius: 999px; }
+.mini-map .map-tip {
+  position: absolute; pointer-events: none; z-index: 5;
+  background: var(--forest-dark); color: #fff; padding: 9px 12px; border-radius: 6px;
+  font-size: 0.74rem; line-height: 1.5; box-shadow: var(--shadow-md);
+  opacity: 0; transform: translate(-50%, calc(-100% - 10px)); transition: opacity 0.15s;
+  max-width: 230px; white-space: nowrap;
+}
+.mini-map .map-tip .t-nome { font-weight: 800; font-size: 0.8rem; }
+#grupos-empty { margin-top: 14px; color: var(--muted); font-size: 0.9rem; }
+
+/* --- evolução --- */
+.evo-card { margin-top: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 22px 24px 18px; }
+.evo-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 18px; }
+.evo-head h3 { font-size: 1rem; }
+.evo-head .hint { font-size: 0.82rem; color: var(--muted); }
+.evo-legend { display: flex; flex-wrap: wrap; gap: 16px; margin-left: auto; font-size: 0.78rem; font-weight: 700; color: var(--muted); }
+.evo-legend .key { display: inline-flex; align-items: center; gap: 7px; }
+.evo-legend .sw { width: 11px; height: 11px; border-radius: 3px; }
+.evo-plot { margin-top: 18px; }
+.evo-cols {
+  display: flex; align-items: stretch; gap: 2px;
+  height: 280px; min-width: 100%;
+  overflow-x: auto; padding-bottom: 4px;
+}
+.evo-col { flex: 1 0 14px; min-width: 14px; display: flex; flex-direction: column; position: relative; }
+.evo-zone { display: flex; flex: 1; }
+.evo-zone.up { align-items: flex-end; }
+.evo-zone.down { align-items: flex-start; border-top: 2px solid var(--line); }
+.evo-zone i { display: block; width: 100%; }
+.evo-zone.up i { background: var(--forest); border-radius: 2px 2px 0 0; }
+.evo-zone.down i { background: var(--atencao); border-radius: 0 0 2px 2px; }
+.evo-zone.pz { align-items: flex-end; border-top: 2px solid var(--line); }
+.evo-zone.pz i { background: var(--perm); border-radius: 0 0 2px 2px; }
+.evo-cols--perm { height: 64px; margin-top: 10px; }
+.evo-axis { display: flex; gap: 2px; margin-top: 6px; }
+.evo-axis span { flex: 1 0 14px; min-width: 14px; font-size: 0.62rem; font-weight: 600; color: var(--muted); text-align: center; }
+.evo-perm-hint { margin-top: 10px; }
+.evo-line-wrap { margin-top: 4px; }
+.evo-empty { margin-top: 12px; color: var(--muted); font-size: 0.88rem; padding: 16px 4px; }
+.evo-multi[hidden] { display: none; }
+.evo-multi { display: grid; gap: 16px; margin-top: 18px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.mini-evo { border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 12px 8px; background: var(--surface); }
+.mini-evo h4 { font-size: 0.85rem; }
+.mini-evo .evo-cols { height: 120px; gap: 1px; }
+.mini-evo .evo-col { flex-basis: 7px; min-width: 7px; }
+@media (max-width: 640px) {
+  .evo-cols, .evo-axis { gap: 1px; }
+  .evo-col { flex-basis: 10px; min-width: 10px; }
+  .evo-axis span { flex-basis: 10px; min-width: 10px; }
+}
+
+/* --- ficha: modos um/comparar --- */
+.mode-row { margin-top: 22px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.mode-switch { display: inline-flex; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px; box-shadow: var(--shadow-sm); }
+.mode-switch button {
+  border: 0; background: transparent; font-family: var(--font); font-weight: 700; font-size: 0.82rem;
+  color: var(--muted); padding: 8px 16px; border-radius: 999px; cursor: pointer; white-space: nowrap;
+}
+.mode-switch button.on { background: var(--forest); color: #fff; }
+.mode-row label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+#uf-chips { display: none; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 7px; margin-top: 14px; }
+#uf-chips.show { display: grid; }
+.chip {
+  display: flex; align-items: center; gap: 8px; font-size: 0.8rem; font-weight: 600; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px;
+  cursor: pointer; user-select: none; transition: background 0.15s;
+}
+.chip input { accent-color: var(--forest); cursor: pointer; }
+.chip.on { background: #e4efe0; border-color: var(--forest); }
+.chip.max { opacity: 0.45; cursor: not-allowed; }
+.cmp-count { font-size: 0.78rem; font-weight: 700; color: var(--muted); }
+.state-panel { margin-top: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 22px 24px; }
+.state-tot { display: flex; flex-wrap: wrap; gap: 26px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.state-tot .kv .k { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.state-tot .kv .n { font-size: 1.25rem; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; }
+.state-cols { display: grid; gap: 28px; margin-top: 20px; }
+@media (min-width: 780px) { .state-cols { grid-template-columns: 1fr 1fr; } }
+.state-cols h3 { font-size: 0.95rem; }
+.cls-list { display: grid; gap: 9px; }
+.cls-item { display: grid; grid-template-columns: 12px 1fr; gap: 10px; align-items: center; }
+.cls-item .sw { width: 11px; height: 11px; border-radius: 3px; margin-top: 4px; }
+.cls-item .line { display: flex; align-items: baseline; gap: 10px; font-size: 0.86rem; }
+.cls-item .line .nm { color: var(--ink); font-weight: 600; min-width: 0; }
+.cls-item .line .v { margin-left: auto; color: var(--muted); white-space: nowrap; font-size: 0.82rem; }
+.cls-item .cbar { grid-column: 2; height: 6px; border-radius: 3px; background: var(--surface-soft); overflow: hidden; }
+.cls-item .cbar i { display: block; height: 100%; border-radius: 3px; }
+.state-empty { padding: 30px 6px; color: var(--muted); font-size: 0.92rem; }
+
+/* --- comparação de estados --- */
+.cmp-grid[hidden] { display: none; }
+.cmp-grid { display: grid; gap: 14px; margin-top: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 880px) { .cmp-grid { grid-template-columns: 1fr; } }
+.cmp-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 16px 18px; overflow-wrap: anywhere; min-width: 0; }
+.cmp-head { display: flex; align-items: baseline; gap: 10px; }
+.cmp-head h4 { font-size: 0.98rem; }
+.cmp-head .saldo { margin-left: auto; font-weight: 800; font-size: 0.88rem; white-space: nowrap; }
+.cmp-bar { display: flex; height: 14px; border-radius: 4px; overflow: hidden; background: var(--surface-soft); margin-top: 10px; }
+.cmp-bar .seg { min-width: 0; box-shadow: inset 0 0 0 1px rgba(16, 56, 43, 0.16); }
+.seg-se { background: var(--forest); }
+.seg-sd { background: var(--atencao); }
+.seg-sp { background: var(--perm); }
+.cmp-vals { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 9px; font-size: 0.78rem; color: var(--muted); font-weight: 600; overflow-wrap: anywhere; }
+.cmp-vals .key { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; }
+.cmp-vals .sw { width: 9px; height: 9px; border-radius: 2px; }
+.cmp-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; margin-top: 12px; }
+.cmp-cols .col-tit { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 4px; }
+.cmp-cols .li { display: flex; justify-content: space-between; gap: 8px; padding: 3px 0; border-bottom: 1px dashed var(--line); font-size: 0.78rem; }
+.cmp-cols .li:last-child { border-bottom: none; }
+.cmp-cols .li .nm { color: var(--ink); font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cmp-cols .li .vv { color: var(--muted); white-space: nowrap; }
+.cmp-empty { margin-top: 16px; padding: 20px 6px; color: var(--muted); font-size: 0.92rem; }
+
+/* --- matriz origem × destino --- */
+.mx-card {
+  margin-top: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); padding: 20px 22px;
+}
+.mx-top { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 26px; margin-bottom: 18px; align-items: start; }
+@media (max-width: 880px) { .mx-top { grid-template-columns: 1fr; } }
+.mx-como { background: var(--surface-soft); border-radius: var(--radius); padding: 14px 16px; }
+.mx-como .lbl2 {
+  display: block; font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--forest); margin-bottom: 8px;
+}
+.mx-como .hint + .hint { margin-top: 8px; }
+.mx-como strong { color: var(--ink); }
+.mx-scroll { overflow-x: auto; padding-bottom: 6px; }
+#matriz-grid { display: grid; grid-template-columns: 56px repeat(40, minmax(15px, 1fr)); gap: 1px; max-width: 1280px; }
+.mx-hi { background: #dfe9db !important; color: var(--forest) !important; }
+.mx-lbl { font-size: 0.66rem; font-weight: 700; color: var(--muted); text-align: right; padding-right: 6px; line-height: 20px; }
+.mx-vi { outline: 2px solid var(--ink); outline-offset: -2px; }
+.mx-h { font-size: 0.6rem; font-weight: 700; color: var(--muted); text-align: center; padding-top: 2px; height: 40px; }
+.mx-h, .mx-lbl { transition: background 0.12s; }
+.mx-h span { writing-mode: vertical-rl; display: inline-block; line-height: 1; }
+.mx-c { aspect-ratio: 1; border-radius: 2px; cursor: pointer; min-height: 20px; }
+.mx-c:hover { outline: 2px solid var(--ink); outline-offset: -2px; position: relative; z-index: 2; }
+.mx-c:hover { outline: 2px solid var(--ink); outline-offset: -2px; }
+.mx-e { aspect-ratio: 1; border-radius: 2px; min-height: 20px; background: #f2f4ef; }
+.mx-side .lbl2 {
+  display: block; font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--muted); margin-bottom: 6px;
+}
+#matriz-metrica {
+  font-family: var(--font); font-size: 0.9rem; font-weight: 600; color: var(--ink);
+  padding: 8px 10px; border-radius: 4px; border: 1px solid var(--line); background: var(--surface-soft);
+  width: 100%;
+}
+.mx-side .hint { margin-top: 12px; }
+
+/* --- funil (fluxos origem → soja → destino) --- */
+.sankey-wrap { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 18px; }
+.sankey-wrap h3 { font-size: 0.98rem; }
+.sankey-wrap .esvg { width: 100%; height: auto; display: block; margin-top: 12px; font-family: var(--font); }
+.sankey-wrap .esvg rect, .sankey-wrap .esvg path { pointer-events: all; transition: 0.15s; }
+.sankey-wrap .esvg path.fita { transition: opacity 0.15s; }
+.sankey-wrap .esvg path.fita:hover, .sankey-wrap .esvg rect:hover { opacity: 0.8; filter: brightness(1.1); }
+
+/* --- contorno do estado do escopo --- */
+.estado-card {
+  margin-top: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); padding: 18px 22px 20px;
+  display: grid; grid-template-columns: 1.15fr 2fr; gap: 22px;
+}
+.estado-card[hidden] { display: none; }
+.estado-card .lbl2 {
+  display: block; font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--muted); margin-bottom: 8px;
+}
+.estado-card svg { width: 100%; height: auto; display: block; }
+.estado-card .ec-shape svg { max-height: 320px; }
+.estado-card .bmap svg { opacity: 0.9; }
+@media (max-width: 760px) { .estado-card { grid-template-columns: 1fr; } }
+
+.h-stack { display: grid; gap: 16px; margin-top: 22px; grid-template-columns: 1fr; }
+.h-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 18px 22px 14px; min-width: 0; }
+.h-card h3 { font-size: 1.05rem; }
+.c-lede { font-size: 0.88rem; margin-top: 4px; color: var(--text); }
+.chart-wrap { margin-top: 12px; background: var(--paper); border-radius: 4px; padding: 10px 10px 6px; }
+.chart-wrap svg { display: block; }
+.achados-card {
+  margin-top: 24px; background: var(--surface); border: 1px solid var(--accent-highlight); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); padding: 18px 22px; border-left: 4px solid var(--forest);
+}
+.achados-card h3 { font-size: 1rem; }
+.achados-card .hint { margin-top: 2px; }
+.achados-list { margin: 10px 0 0; padding-left: 18px; font-size: 0.88rem; color: var(--text); }
+.achados-list li + li { margin-top: 5px; }
+.achados-list strong { color: var(--ink); }
+/* --- downloads --- */
+.dl-grid { display: grid; gap: 14px; margin-top: 22px; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
+.dl-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); padding: 18px 20px 16px; text-decoration: none;
+  display: flex; flex-direction: column; gap: 10px; overflow-wrap: anywhere; min-width: 0;
+  transition: transform 0.18s cubic-bezier(.22, .61, .36, 1), box-shadow 0.18s;
+}
+.dl-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--forest); }
+.dl-card strong { color: var(--ink); font-size: 0.95rem; }
+.dl-desc { font-size: 0.84rem; color: var(--text); line-height: 1.55; }
+.dl-desc b { color: var(--forest); }
+.dl-cta {
+  margin-top: auto; align-self: flex-start;
+  background: var(--forest); color: var(--accent-highlight);
+  font-size: 0.78rem; font-weight: 800; border-radius: 999px; padding: 7px 15px;
+}
+
+/* --- metodologia / footer --- */
+.met-card { min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 22px 24px; margin-top: 26px; }
+.met-card summary {
+  cursor: pointer; list-style: none; display: flex; align-items: baseline; gap: 10px;
+  font-size: 1.05rem; font-weight: 800; color: var(--ink); user-select: none;
+}
+.met-card summary::-webkit-details-marker { display: none; }
+.met-card summary::before { content: "▸"; color: var(--forest); transition: transform 0.18s; display: inline-block; }
+.met-card[open] summary::before { transform: rotate(90deg); }
+.met-card summary small { font-size: 0.72rem; font-weight: 600; color: var(--vazio); letter-spacing: 0.02em; }
+.met-card h3 { font-size: 1rem; margin-bottom: 8px; }
+.met-card p, .met-card li { font-size: 0.9rem; color: var(--text); }
+.met-card ul { margin: 8px 0 0; padding-left: 20px; }
+.met-card li + li { margin-top: 6px; }
+.site-footer { border-top: 1px solid var(--line); background: var(--surface); }
+.site-footer .band-inner { padding-block: 34px 38px; text-align: center; }
+.site-footer .strong { color: var(--ink); font-weight: 700; font-size: 0.92rem; }
+.rod-autores {
+  display: flex; flex-direction: column; align-items: center; gap: 9px;
+  margin-top: 10px; font-size: 0.84rem; max-width: 100%;
+}
+.rod-autor { display: inline-flex; align-items: center; gap: 8px; overflow-wrap: anywhere; max-width: 100%; min-width: 0; }
+.rod-autor strong { color: var(--ink); }
+.rod-autor a { color: var(--forest); }
+.rod-copiar {
+  border: 1px solid var(--line); background: var(--surface); color: var(--muted);
+  font-family: var(--font); font-size: 0.68rem; font-weight: 700; border-radius: 999px;
+  padding: 3px 10px; cursor: pointer; transition: 0.15s;
+}
+.rod-copiar:hover { border-color: var(--forest); color: var(--forest); }
+.site-footer .soft { color: var(--muted); font-size: 0.8rem; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div id="topo"></div>
+
+<nav class="site-nav" aria-label="Navegação principal">
+  <div class="band-inner wrap">
+    <a class="brand" href="#topo"><span class="brand-mark">39</span> Transições da Soja no Brasil</a>
+    <div class="nav-links">
+      <a href="#visao-geral">Visão geral</a>
+      <a href="#ranking" id="nl-ranking">Ranking</a>
+      <a href="#mapa" id="nl-mapa">Mapa</a>
+      <a href="#matriz">Matriz</a>
+      <a href="#evolucao">Evolução</a>
+      <a class="keep" href="#estados">Por estado</a>
+      <a href="#dados">Baixar</a>
+      <a class="keep" href="#metodologia">Metodologia</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="band-inner wrap">
+    <div class="hero-eyebrow">MapBiomas · classe Soja (39)</div>
+    <h1>De onde vem, para onde vai<br><span>a soja brasileira em 40 anos de trajetórias (1985 → 2025)</span></h1>
+    <p class="hero-desc">Escolha os <strong style="color:#fff">anos de início e fim</strong> e o <strong style="color:#fff">escopo</strong> no console — a página inteira reage. São <strong style="color:#fff">820 janelas possíveis por estado</strong>, todas aqui: balanço, ranking, mapas, matriz completa, evolução da soja e comparação entre estados.</p>
+    <div class="hero-chips">
+      <span class="hchip"><span class="sw sw-deixou"></span> Deixou de ser soja</span>
+      <span class="hchip"><span class="sw sw-virou"></span> Virou soja</span>
+      <span class="hchip"><span class="sw sw-perm"></span> Permaneceu soja</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#visao-geral">Ver o balanço</a>
+      <a class="btn btn-ghost" href="#mapa">Abrir o mapa</a>
+    </div>
+    <div class="hero-badge num"><strong id="badge-valor">—</strong><small id="badge-rotulo">viraram soja · 2018 → 2024</small></div>
+  </div>
+</header>
+
+<div class="console" id="console" role="group" aria-label="Seleção da janela de análise">
+  <div class="band-inner wrap">
+    <span class="grp">
+      <span class="lbl">Início</span>
+      <select id="ano-origem" aria-label="Ano de início"></select>
+      <span class="lbl" aria-hidden="true" style="color:var(--forest);font-size:1.2rem">→</span>
+      <span class="lbl">Fim</span>
+      <select id="ano-destino" aria-label="Ano de fim"></select>
+    </span>
+    <span class="grp">
+      <span class="lbl">Escopo</span>
+      <select id="escopo" aria-label="Escopo: Brasil ou estado"></select>
+    </span>
+    <div class="janela num">
+      <small>Trajetória</small>
+      <span id="janela-txt">—</span>
+    </div>
+  </div>
+</div>
+
+<div class="aviso" id="aviso-console" hidden role="status">
+  <span class="aviso-ball" aria-hidden="true"></span>
+  <p class="aviso-txt">A página inteira muda pelos seletores do <strong>console fixo</strong> acima:
+  escolha os <strong>anos de início e fim</strong> (1985 → 2025) e o <strong>escopo</strong> — Brasil ou qualquer estado.
+  <span class="aviso-soft">Esta dica não voltará depois de fechada.</span></p>
+  <button type="button" id="aviso-fechar" aria-label="Fechar a dica">×</button>
+</div>
+
+<div class="directory">
+  <div class="band-inner wrap">
+    <a class="dir-item" href="#visao-geral"><span class="n">01</span><span class="t">Balanço da janela</span><span class="a">→</span></a>
+    <a class="dir-item" id="dir-ranking" href="#ranking"><span class="n">02</span><span class="t">Ranking e composição</span><span class="a">→</span></a>
+    <a class="dir-item" id="dir-mapa" href="#mapa"><span class="n">03</span><span class="t">Mapa por UF</span><span class="a">→</span></a>
+    <a class="dir-item" href="#matriz"><span class="n">04</span><span class="t">Matriz origem × destino</span><span class="a">→</span></a>
+    <a class="dir-item" href="#evolucao"><span class="n">05</span><span class="t">Evolução no tempo</span><span class="a">→</span></a>
+    <a class="dir-item" href="#estados"><span class="n">06</span><span class="t">Um estado ou comparar</span><span class="a">→</span></a>
+    <a class="dir-item" id="dir-dados" href="#dados"><span class="n">07</span><span class="t">Baixar os dados</span><span class="a">→</span></a>
+    <a class="dir-item" href="#metodologia"><span class="n">08</span><span class="t">Metodologia e cobertura</span><span class="a">→</span></a>
+  </div>
+</div>
+
+<section class="section" id="visao-geral">
+  <div class="wrap band-inner">
+    <div class="section-eyebrow" id="vg-eyebrow">Panorama nacional</div>
+    <h2 class="section-title" id="vg-title">O balanço da janela, em números</h2>
+    <p class="section-desc" id="vg-desc">Totais do Brasil para a trajetória selecionada no console, agregados sobre as 27 unidades federativas. Valores em hectares, medidos sobre malhas de 30 m.</p>
+
+    <div class="stats">
+      <div class="stat"><div class="v num" id="st-soja-dd">—</div><div class="l">Soja no ano final (ha)</div></div>
+      <div class="stat"><div class="v num" id="st-virou">—</div><div class="l">Viraram soja (ha)</div></div>
+      <div class="stat"><div class="v num" id="st-deixou">—</div><div class="l">Deixaram de ser soja (ha)</div></div>
+      <div class="stat"><div class="v num" id="st-perm">—</div><div class="l">Permaneceram soja (ha)</div></div>
+      <div class="stat"><div class="v num" id="st-saldo">—</div><div class="l">Saldo líquido (ha)</div></div>
+      <div class="stat"><div class="v num" id="st-ufs">—</div><div class="l" id="st-ufs-l">UFs com soja na janela</div></div>
+    </div>
+
+    <div class="achados-card">
+      <h3>Achados da janela</h3>
+      <p class="hint" id="achados-sub">—</p>
+      <ul class="achados-list" id="achados-list"></ul>
+    </div>
+
+    <div class="comp-wrap">
+      <h3>Estrutura da janela</h3>
+      <p class="hint" id="estrutura-hint">Proporção de cada movimento sobre o total de área envolvida na trajetória.</p>
+      <div class="stack" id="estrutura-bar" style="margin-top:14px"></div>
+      <div class="comp-legend" id="estrutura-legend"></div>
+    </div>
+
+    <div class="estado-card" id="estado-card" hidden>
+      <div class="ec-loc">
+        <label class="lbl2">Localização no Brasil</label>
+        <div class="bmap" id="estado-loc"></div>
+      </div>
+      <div class="ec-zoom">
+        <label class="lbl2" id="ec-zoom-lbl">Contorno do estado</label>
+        <div class="ec-shape" id="estado-shape"></div>
+      </div>
+    </div>
+
+    <div class="dataset-card" id="cobertura-card">
+      <div>
+        <span class="ds-tag"><span class="ds-dot"></span> Cobertura completa</span>
+        <h3>40 anos de origem × 40 anos de destino</h3>
+        <p class="sub">Todas as 27 unidades federativas foram processadas no MapBiomas, na mesma malha de 10 m. Para cada UF, todas as trajetórias possíveis: 820 combinações de origem → destino por UF (1985 → 1986 até 2024 → 2025).</p>
+      </div>
+      <div class="cobertura">
+        <div class="cobertura-row"><span class="dot dot-ok"></span><span class="lbl">Anos de origem disponíveis</span><span class="who num">1985 a 2024 (40)</span></div>
+        <div class="cobertura-row"><span class="dot dot-ok"></span><span class="lbl">Anos de destino disponíveis</span><span class="who num">1986 a 2025 (40)</span></div>
+        <div class="cobertura-row"><span class="dot dot-ok"></span><span class="lbl">UFs processadas</span><span class="who num">27 de 27 (100%)</span></div>
+        <div class="cobertura-row"><span class="dot dot-falta"></span><span class="lbl">Sem soja registrada na série</span><span class="who" id="cob-zero">—</span></div>
+        <div class="track" aria-hidden="true"><span class="seg-ok" style="width:100%"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="ranking">
+  <div class="wrap band-inner">
+    <div class="section-eyebrow">Onde a soja avançou</div>
+    <h2 class="section-title">Ranking estadual da expansão</h2>
+    <p class="section-desc" id="rank-desc">Barra única empilhada por UF — o que virou soja (verde), o que deixou de ser soja (âmbar) e o que permaneceu soja (cinza) — em hectares, numa única escala compartilhada entre os estados para preservar as proporções reais.</p>
+    <div class="rank-legend">
+      <span class="key"><span class="sw sw-deixou"></span> Deixou de ser soja</span>
+      <span class="key"><span class="sw sw-virou"></span> Virou soja</span>
+      <span class="key"><span class="sw sw-perm"></span> Permaneceu soja</span>
+    </div>
+    <p class="hint" id="rank-scale" style="margin-top:2px"></p>
+    <div class="rank-list" id="rank-list"></div>
+    <div class="rank-empty" id="rank-empty" hidden>Nenhuma transição registrada no Brasil nesta janela.</div>
+
+    <div class="comp-wrap">
+      <div class="comp-item2">
+        <h3>De onde veio a soja nova no Brasil</h3>
+        <p class="hint" id="comp-v-hint">Composição das áreas que viraram soja, pelas classes de uso no ano de origem.</p>
+        <div class="stack" id="comp-bar" style="margin-top:14px"></div>
+        <div class="comp-legend" id="comp-legend"></div>
+      </div>
+      <div class="comp-item2">
+        <h3>Para onde foi a soja que saiu</h3>
+        <p class="hint" id="comp-d-hint">Composição das áreas que deixaram de ser soja, pelas classes de uso no ano de destino.</p>
+        <div class="stack" id="comp-bar-d" style="margin-top:14px"></div>
+        <div class="comp-legend" id="comp-legend-d"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="mapa">
+  <div class="wrap band-inner">
+    <div class="section-eyebrow">Onde no território</div>
+    <h2 class="section-title">Mapa da janela por unidade federativa</h2>
+    <p class="section-desc" id="mapa-desc">Cada UF pintada pela área envolvida na trajetória selecionada no console.</p>
+    <div class="map-wrap">
+      <div class="map-plot" id="map-plot">
+        <div id="brazil-map" role="img" aria-label="Mapa do Brasil por unidade federativa"></div>
+        <div class="map-tip num" id="mapa-tip"></div>
+      </div>
+      <div class="map-side">
+        <label class="lbl2" for="mapa-metrica">Métrica no mapa</label>
+        <select id="mapa-metrica">
+          <option value="virou">Virou soja</option>
+          <option value="deixou">Deixou de ser soja</option>
+          <option value="saldo">Saldo (virou − deixou)</option>
+          <option value="perm">Permaneceu soja</option>
+          <option value="sojad">Soja no ano final (virou + permaneceu)</option>
+          <option value="g1">Origem: Outras culturas → soja</option>
+          <option value="g2">Origem: Pastagem → soja</option>
+          <option value="g3">Origem: Mosaico de usos → soja</option>
+          <option value="g4">Origem: Vegetação nativa → soja</option>
+          <option value="g5">Origem: Demais classes → soja</option>
+        </select>
+        <div class="map-legend">
+          <div class="grad" id="mapa-grad"></div>
+          <div class="grad-lbls num"><span id="mapa-min">0</span><span id="mapa-max">—</span></div>
+        </div>
+        <p class="hint">Clique em um estado para abrir o detalhe dele. No modo <strong>Comparar estados</strong>, os estados escolhidos ganham contorno âmbar.</p>
+        <ul class="map-top num" id="mapa-top"></ul>
+      </div>
+    </div>
+
+    <h3 class="sub-map">De onde a soja veio — um mapa para cada grupo de origem</h3>
+    <p class="section-desc" id="grupos-desc">Seis mapas, um para cada fonte da soja nova nesta janela (padrão: 2018 → 2024, seguindo o console). Cada UF pintada pela área do grupo no estado — rampa própria por mapa; passe o mouse para os valores; clique para abrir o estado.</p>
+    <div class="grupos-grid" id="grupos-grid"></div>
+    <div class="comp-wrap" style="margin-top:18px">
+      <div class="comp-item2">
+        <h3>Os seis grupos no Brasil, nesta janela</h3>
+        <p class="hint" id="g-leg-hint">Área total de cada grupo de origem sobre o total da soja nova + soja que permaneceu.</p>
+        <ul class="g-leg" id="g-leg"></ul>
+      </div>
+      <div class="comp-item2">
+        <h3>Maiores áreas vindas de Vegetação nativa</h3>
+        <p class="hint">Top 6 UFs por área de origem nativa convertida em soja nesta janela.</p>
+        <ul class="map-top num" id="grupos-top-nativa"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="matriz">
+  <div class="wrap band-inner">
+    <div class="section-eyebrow">Visão total</div>
+    <h2 class="section-title">Matriz origem × destino</h2>
+    <p class="section-desc" id="matriz-desc">Cada célula é uma janela: origem na linha, destino na coluna — todas as trajetórias possíveis de uma vez.</p>
+    <div class="mx-card">
+      <div class="mx-top">
+        <div class="mx-controls">
+          <label class="lbl2" for="matriz-metrica">Métrica nas células</label>
+          <select id="matriz-metrica">
+            <option value="virou">Virou soja</option>
+            <option value="deixou">Deixou de ser soja</option>
+            <option value="saldo">Saldo (virou − deixou)</option>
+            <option value="perm">Permaneceu soja</option>
+            <option value="sojad">Soja no ano final (virou + permaneceu)</option>
+            <option value="g1">Origem: Outras culturas → soja</option>
+            <option value="g2">Origem: Pastagem → soja</option>
+            <option value="g3">Origem: Mosaico de usos → soja</option>
+            <option value="g4">Origem: Vegetação nativa → soja</option>
+            <option value="g5">Origem: Demais classes → soja</option>
+          </select>
+          <div class="map-legend">
+            <div class="grad" id="matriz-grad" style="margin-top:12px"></div>
+            <div class="grad-lbls num"><span id="matriz-min">0</span><span id="matriz-max">—</span></div>
+          </div>
+          <p class="hint" id="matriz-escopo">—</p>
+        </div>
+        <div class="mx-como">
+          <label class="lbl2">Como ler este gráfico</label>
+          <p class="hint">Cada <strong>célula é uma janela</strong>: a <strong>linha</strong> é o ano de <strong>início</strong> da trajetória e a <strong>coluna</strong> é o ano de <strong>fim</strong>. A cor mede a métrica escolhida (ao lado) naquele par de anos: 5 faixas por quantis dos próprios dados — <strong>quanto mais escura, maior a área</strong>, e cada faixa concentra ~20% das células.</p>
+          <p class="hint"><strong>Clique</strong> numa célula para fixar aquela janela no console (Início/Fim/escopo) e refazer a página; <strong>passe o mouse</strong> para ler os valores exatos e iluminar a linha e a coluna. O bloco claro sob a diagonal (fim ≤ início) não existe na série.</p>
+        </div>
+      </div>
+      <div class="mx-scroll">
+        <div id="matriz-grid" role="grid" aria-label="Matriz origem x destino"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="evolucao">
+  <div class="wrap band-inner">
+    <div class="section-eyebrow">Série da trajetória</div>
+    <h2 class="section-title">Evolução a partir do ano de origem</h2>
+    <p class="section-desc">Fixando o ano de origem do console, cada coluna segue a trajetória até um ano seguinte. Cada cor tem escala própria.</p>
+    <div class="evo-card">
+      <div class="evo-head">
+        <h3 id="evo-titulo">—</h3>
+        <span class="hint" id="evo-sub">—</span>
+        <div class="evo-legend">
+          <span class="key"><span class="sw" style="background:var(--forest)"></span> Virou</span>
+          <span class="key"><span class="sw" style="background:var(--atencao)"></span> Deixou</span>
+          <span class="key"><span class="sw" style="background:var(--perm)"></span> Permaneceu (linha)</span>
+        </div>
+      </div>
+      <div class="evo-plot" id="evo-single">
+        <p class="evo-scale num" id="evo-scale"></p>
+        <div class="evo-cols" id="evo-cols"></div>
+        <div class="evo-axis" id="evo-axis"></div>
+        <div class="evo-readout num" id="evo-readout"></div>
+        <p class="hint evo-perm-hint" id="evo-perm-hint">Permaneceu (ha): a soja que existia em <strong id="ret-origem-lbl">a</strong> e <strong>continuava soja</strong> em cada ano de fim — eixo de 0 a <strong id="evo-perm-max">—</strong>; a linha segue os valores como são (sobe quando aumentam; um pixel que saiu e voltou volta a contar).</p>
+        <div class="evo-line-wrap" id="evo-line-p"></div>
+      </div>
+      <div class="evo-multi" id="evo-multi" hidden></div>
+      <div class="evo-empty" id="evo-empty" hidden>Sem soja registrada nesta seleção no ano de origem escolhido.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="estados">
+  <div class="wrap band-inner">
+    <div class="section-eyebrow" id="ef-eyebrow">Ficha por unidade federativa</div>
+    <h2 class="section-title">Detalhe por estado</h2>
+    <p class="section-desc">Ficha completa do escopo escolhido no console (com sankey e evolução). Para comparar vários estados lado a lado, use o interruptor “Comparar estados” abaixo — trocar o escopo volta ao detalhe.</p>
+    <div class="mode-row">
+      <div class="mode-switch" role="group" aria-label="Modo de visualização">
+        <button type="button" id="mode-um" class="on">Um estado (detalhe expansivo)</button>
+        <button type="button" id="mode-cmp">Comparar estados</button>
+      </div>
+      <span class="hint" id="escopo-hint">O estado analisado é o <strong>Escopo</strong> do console (ou clique num estado no mapa); “Um estado” abre a ficha dele, com sankey.</span>
+      <span class="cmp-count" id="cmp-count" hidden>nenhum estado por enquanto</span>
+    </div>
+    <div id="uf-chips"></div>
+    <div class="state-panel" id="state-panel"></div>
+    <div class="cmp-grid" id="cmp-grid" hidden></div>
+    <div class="cmp-empty" id="cmp-empty" hidden>Selecione de 1 a 5 estados na lista acima.</div>
+  </div>
+</section>
+
+
+  <div class="wrap band-inner">
+    <div class="section-eyebrow">Base aberta</div>
+    <h2 class="section-title">Baixar os dados</h2>
+    <p class="section-desc">Os mesmos números desta página, em formatos diretos — use em R, Python, planilhas ou onde quiser. Sem cadastro, sem trunco.</p>
+    <div class="dl-grid">
+      <a class="dl-card" href="transicoes_long.csv.gz" download>
+        <strong class="num">transicoes_long.csv.gz</strong>
+        <span class="dl-desc">Base consolidada em formato <em>long</em>: UF × ano de início × ano de fim × transição × classe, <b>372.695 linhas</b> (2,6 MB). A porta de entrada para qualquer análise.</span>
+        <span class="dl-cta">Baixar ↓</span>
+      </a>
+      <a class="dl-card" href="todas-transicoes.zip" download>
+        <strong class="num">todas-transicoes.zip</strong>
+        <span class="dl-desc">Os 1.080 CSVs de origem: por UF e ano de início, com todas as trajetórias até 2025 (5,7 MB) — o dado como foi processado, linha a linha.</span>
+        <span class="dl-cta">Baixar ↓</span>
+      </a>
+      <a class="dl-card" href="dados.json" download>
+        <strong class="num">dados.json</strong>
+        <span class="dl-desc">O JSON compacto agregado que o próprio site carrega (~4,2 MB) — ideal para protótipos em JavaScript ou checagens rápidas.</span>
+        <span class="dl-cta">Baixar ↓</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="metodologia">
+  <div class="wrap band-inner">
+    <div class="section-eyebrow">Método e cobertura</div>
+    <h2 class="section-title">Metodologia</h2>
+    <p class="section-desc">Guia completo do processamento — clique no cabeçalho para abrir ou recolher.</p>
+    <details class="met-card" id="met-recolha">
+      <summary>Como os números foram gerados<small>clique para abrir · fechar</small></summary>
+      <div class="met-body">
+      <h3>Classificação, pós-processamento e trajetórias</h3>
+      <ul>
+        <li>A série usa a classe <strong>Soja (39)</strong> do MapBiomas, cruzada com o uso da terra no <strong>ano de origem</strong> e no <strong>ano de destino</strong>, processada no Google Earth Engine sobre malhas de <strong>10 m</strong>.</li>
+        <li>Foram exportadas <strong>todas as trajetórias possíveis</strong> entre 1985 e 2025: da origem 1985 até os destinos 1986–2025, da origem 1986 até 1987–2025, e assim por diante, até a origem 2024 com destino 2025. Cada UF tem 820 pares origem → destino possíveis.</li>
+        <li>“Virou soja” = classe 39 no ano de destino onde havia outra classe na origem. “Deixou de ser soja” = outra classe no destino onde havia classe 39 na origem. “Permaneceu soja” = classe 39 nos dois anos.</li>
+        <li>Áreas em hectares, somadas por classe dentro de cada UF. Valores menores que 0,05 ha foram descartados; áreas menores que 10 ha mantêm uma casa decimal e as demais são arredondadas ao hectare inteiro.</li>
+        <li>Nos gráficos de barras com mais de uma cor, <strong>cada cor tem escala própria</strong>, pois as ordens de magnitude se diferem por anos (a área permanente costuma ser muito maior no acumulado histórico).</li>
+        <li>A <strong>matriz origem × destino</strong> mostra todas as janelas de uma vez; <strong>cada janela compara dois anos fixos</strong> — “permaneceu soja” é a sobreposição da soja nos dois extremos, não trajetória contínua: um pixel que saiu de soja e voltou no meio do intervalo não é detectado nessas métricas.</li>
+        <li><strong>Soja no ano final</strong> = virou + permaneceu — a área total da classe Soja (39) no ano de destino da janela (a métrica aparece nos cartões, no mapa e na matriz; disponível desde que a UF tenha registrado classe 39 em algum ano).</li>
+        <li>A base completa em formato <em>long</em> acompanha o repositório (<em>transicoes_long.csv.gz</em>, UF × origem × destino × transição × classe) para uso em R, Python ou planilhas.</li>
+        <li>O mapa usa contornos simplificados das UFs (fonte aberta, precisão ilustrativa — não é cartografia oficial) e cores interpoladas, também indicativas.</li>
+        <li>Seis UFs não registraram soja em nenhum ano da série (<span id="cob-zero2">—</span>).</li>
+        <li><strong>Os seis mapas de origem</strong> agregam as classes da legenda da Coleção 11 nos grupos abaixo (ids que aparecerem na base; alguns são cabeçalhos de grupo e podem não ocorrer isoladamente):<br>
+          • <strong>Soja no início e no fim</strong> — a classe 39 (Soja) presente nos dois anos da janela (permaneceu).<br>
+          • <strong>Outras culturas → Soja</strong> — agro já cultivado: 9 Silvicultura, 20 Cana, 35 Dendê, 40 Arroz, 41 Outras Lavouras Temporárias, 46 Café, 47 Citrus, 48 Outras Lavouras Perenes, 62 Algodão (beta).<br>
+          • <strong>Pastagem → Soja</strong> — 15 Pastagem.<br>
+          • <strong>Mosaico de usos → Soja</strong> — 21 Mosaico de Usos (e 26, quando presente).<br>
+          • <strong>Vegetação nativa → Soja</strong> — florestas e formações naturais: 1 Floresta, 3 Formação Florestal, 4 Formação Savânica, 5 Mangue, 6 Floresta Alagável, 7 Savana Alagada (beta), 10 Vegetação Herbácea, 11 Campo Alagado e Área Pantanosa, 12 Formação Campestre, 29 Afloramento Rochoso, 32 Apicum, 49 Restinga Arbórea, 50 Restinga Herbácea ou Arbustiva, 77 Formação Herbáceo-Arbustiva, 84 Marisma (beta).<br>
+          • <strong>Demais classes → Soja</strong> — 23 Praia, Duna e Areal, 24 Área Urbanizada, 25 Outras Áreas não Vegetadas, 30 Mineração, 31 Aquicultura, 33 Rio, Lago e Oceano, 75 Usina Fotovoltaica, 91 Parque eólico (beta).</li>
+        <li>As cores dos seis mapas de origem são a <strong>paleta fixa do projeto</strong> (#E83E8C, #A000D8, #E99400, #FFD21A, #238B57, #777777, nesta ordem dos grupos); dentro de cada mapa, os tons vão de tinta clara da própria matiz até a cor cheia no estado de maior área. Já as cores por classe nas barras/composições seguem a <strong>legenda oficial da Coleção 11</strong> (tabela publicada em 13/08/2026); “Outras classes” e as escalas de saldo são cores auxiliares deste site.</li>
+      </ul>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="band-inner wrap">
+    <p class="strong">Desenvolvido por</p>
+    <div class="rod-autores">
+      <span class="rod-autor"><strong>Ana Pretto</strong>
+        <a class="num" href="mailto:pretto.anacaroline@gmail.com">pretto.anacaroline@gmail.com</a>
+        <button type="button" class="rod-copiar" data-mail="pretto.anacaroline@gmail.com" aria-label="Copiar e-mail de Ana">copiar</button></span>
+      <span class="rod-autor"><strong>Marcos Cardoso</strong>
+        <a class="num" href="mailto:cardoso.mvs@gmail.com">cardoso.mvs@gmail.com</a>
+        <button type="button" class="rod-copiar" data-mail="cardoso.mvs@gmail.com" aria-label="Copiar e-mail de Marcos">copiar</button></span>
+      <span class="rod-autor"><strong>Gabriella Arruda</strong>
+        <a class="num" href="mailto:gabriella.lima@embrapa.br">gabriella.lima@embrapa.br</a>
+        <button type="button" class="rod-copiar" data-mail="gabriella.lima@embrapa.br" aria-label="Copiar e-mail de Gabriella">copiar</button></span>
+    </div>
+    <p class="soft">Dados derivados da classe Soja (39) do MapBiomas · processados no Google Earth Engine · mapa: contornos de UFs (fonte aberta) · atualizado em novembro de 2026</p>
+  </div>
+</footer>
+
+<script src="../data.js"></script>
+<script>
+/*<inline>*/
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var fmt = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 0 });
+
+  /* cores OFICIAIS da Coleção 11 do MapBiomas (legenda publicada em 13/08/2026) */
+  var CORES = {
+    3: "#1f8d49", 4: "#7dc975", 5: "#04381d", 6: "#007785", 7: "#228c70", 9: "#7a5900",
+    11: "#517979", 12: "#d6bc74", 15: "#edde8e", 20: "#db7093", 21: "#ffefc3",
+    23: "#ffa07a", 24: "#49271e", 25: "#db4d4f", 29: "#ad5100", 30: "#9c0027",
+    31: "#091077", 32: "#fc8114", 33: "#2532e4", 35: "#9065d0", 40: "#c71585",
+    41: "#f54ca9", 46: "#d68fe2", 47: "#9932cc", 48: "#e6ccff", 49: "#02d659",
+    50: "#ffaa5f", 62: "#ff69b4", 75: "#757272", 84: "#81dbbf", 91: "#403d3e",
+    39: "#f5b3c8"
+  };
+  var PALETA = ["#2e7d5b", "#d9c87c", "#9aa5a0", "#dcc06a", "#6f8fb5", "#a8c48a", "#c06058", "#e2b93b", "#5fb37a", "#b58fb5"];
+  function corCls(id) {
+    if (CORES[id] != null) return CORES[id];
+    var s = String(CLS[id] || "");
+    var h = 0;
+    for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+    return PALETA[h % PALETA.length];
+  }
+  /* interpolação hex para rampas do mapa */
+  function hex2rgb(h) { return [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)]; }
+  function mix(a, b, t) {
+    var c1 = hex2rgb(a), c2 = hex2rgb(b);
+    return "rgb(" + Math.round(c1[0] + (c2[0] - c1[0]) * t) + "," + Math.round(c1[1] + (c2[1] - c1[1]) * t) + "," + Math.round(c1[2] + (c2[2] - c1[2]) * t) + ")";
+  }
+  function mixHex(a, b, t) {
+    var c1 = hex2rgb(a), c2 = hex2rgb(b);
+    function hx(x) { var s = Math.round(Math.max(0, Math.min(255, x))).toString(16); return s.length < 2 ? "0" + s : s; }
+    return "#" + hx(c1[0] + (c2[0] - c1[0]) * t) + hx(c1[1] + (c2[1] - c1[1]) * t) + hx(c1[2] + (c2[2] - c1[2]) * t);
+  }
+  var RAMPA = { virou: ["#edf1e6", "#184b39"], deixou: ["#f2e9db", "#8a4a12"], perm: ["#edf1eb", "#414f47"], sojad: ["#e8efeb", "#0e6a56"] };
+  var SALDO_POS = "#2e7d5b", SALDO_NEG = "#b06010", SALDO_MEIO = "#eff1ea", SALDO_NEG_CLARO = "#f2ece2";
+
+  function ha(v) { return fmt.format(Math.round(v || 0)) + " ha"; }
+  function resumo(v) {
+    v = v || 0;
+    var neg = v < 0; v = Math.abs(v);
+    var s;
+    if (v >= 1e6) s = (v / 1e6).toFixed(2).replace(".", ",") + " M ha";
+    else if (v >= 1e4) s = fmt.format(Math.round(v / 1e3)) + " mil ha";
+    else if (v >= 1e3) s = (v / 1e3).toFixed(1).replace(".", ",") + " mil ha";
+    else s = fmt.format(Math.round(v)) + " ha";
+    return neg ? "−" + s : s;
+  }
+  function pct(v, t) { return t > 0 ? (100 * v / t).toFixed(1).replace(".", ",") + "%" : "0%"; }
+  function corSaldo(v, maxAbs) {
+    if (!maxAbs) return SALDO_MEIO;
+    var t = Math.abs(v) <= 0 ? 0 : Math.log1p(Math.abs(v)) / Math.log1p(maxAbs);
+    return v >= 0 ? mix(SALDO_MEIO, SALDO_POS, t) : mix(SALDO_NEG_CLARO, SALDO_NEG, t);
+  }
+
+  /* ---- dados ---- */
+  var ANOS = DADOS.anos;
+  var UFS = DADOS.ufs;
+  var CLS = {};
+  DADOS.classes.forEach(function (p) { CLS[p[0]] = p[1]; });
+
+  var IDX = DADOS.t.map(function (grupos) {
+    var m = {};
+    grupos.forEach(function (g) {
+      var k = g[0] + "-" + g[1];
+      var rec = m[k] || (m[k] = { v: 0, d: 0, p: 0, dv: null, dd: null });
+      var s = 0;
+      g[3].forEach(function (c) { s += c[1]; });
+      if (g[2] === 0) { rec.v = s; rec.dv = g[3]; }
+      else if (g[2] === 1) { rec.d = s; rec.dd = g[3]; }
+      else { rec.p = s; }
+    });
+    return m;
+  });
+  var SEM_DADOS = [];
+  UFS.forEach(function (u, i) {
+    var tem = false;
+    for (var k in IDX[i]) { tem = true; break; }
+    if (!tem) SEM_DADOS.push(u[1]);
+  });
+
+  function ufPair(i, o, dd) { return IDX[i][o + "-" + dd] || { v: 0, d: 0, p: 0, dv: null, dd: null }; }
+
+
+  function agrega(o, dd) {
+    var k = o + "-" + dd;
+    var r = { v: 0, d: 0, p: 0, dv: {}, dd: {}, n: 0 };
+    IDX.forEach(function (m) {
+      var rec = m[k];
+      if (!rec) return;
+      r.v += rec.v; r.d += rec.d; r.p += rec.p;
+      if (rec.v || rec.d || rec.p) r.n++;
+      if (rec.dv) rec.dv.forEach(function (c) { r.dv[c[0]] = (r.dv[c[0]] || 0) + c[1]; });
+      if (rec.dd) rec.dd.forEach(function (c) { r.dd[c[0]] = (r.dd[c[0]] || 0) + c[1]; });
+    });
+    return r;
+  }
+
+  function classesDe(src) {
+    var arr = Array.isArray(src)
+      ? src.map(function (c) { return { id: c[0], area: c[1] }; })
+      : Object.keys(src).map(function (k) { return { id: +k, area: src[k] }; });
+    return arr.sort(function (a, b) { return b.area - a.area; });
+  }
+
+  /* siglas (minúsculas, como os ids do SVG do mapa) */
+  var CODE2SIGLA = {
+    Acre: "ac", Alagoas: "al", Amapa: "ap", Amazonas: "am", Bahia: "ba", Ceara: "ce",
+    Distrito_Federal: "df", Espirito_Santo: "es", Goias: "go", Maranhao: "ma",
+    Mato_Grosso: "mt", Mato_Grosso_Do_Sul: "ms", Minas_Gerais: "mg", Para: "pa",
+    Paraiba: "pb", Parana: "pr", Pernambuco: "pe", Piaui: "pi", Rio_De_Janeiro: "rj",
+    Rio_Grande_Do_Norte: "rn", Rio_Grande_Do_Sul: "rs", Rondonia: "ro", Roraima: "rr",
+    Santa_Catarina: "sc", Sao_Paulo: "sp", Sergipe: "se", Tocantins: "to"
+  };
+  var SIGLA2IDX = {};
+  UFS.forEach(function (u, i) { SIGLA2IDX[CODE2SIGLA[u[0]]] = i; });
+
+  /* ---- console ---- */
+  var selO = $("ano-origem"), selD = $("ano-destino"), selUF = $("escopo");
+  var O0 = 2018, D0 = 2024;
+
+  ANOS.slice(0, -1).forEach(function (a) {
+    var o = document.createElement("option");
+    o.value = a; o.textContent = a;
+    selO.appendChild(o);
+  });
+  function opcoesDestino() {
+    var o = +selO.value;
+    selD.innerHTML = "";
+    ANOS.forEach(function (a) {
+      if (a <= o) return;
+      var op = document.createElement("option");
+      op.value = a; op.textContent = a;
+      selD.appendChild(op);
+    });
+    if (+selD.value > o || !selD.options.length) selD.value = ANOS[ANOS.length - 1];
+  }
+  opcoesDestino();
+  selO.value = String(O0); selD.value = String(D0);
+
+  /* janela/escopo via URL (compartilhável): #2018-2024-mt */
+  function aplicarHash() {
+    var h = (location.hash || "").replace("#", "");
+    if (!h) return;
+    var p = h.split("-");
+    if (p.length >= 2 && +p[0] >= ANOS[0] && +p[0] <= ANOS[ANOS.length - 2]) {
+      selO.value = p[0];
+      opcoesDestino();
+      if (+p[1] > +p[0] && +p[1] <= ANOS[ANOS.length - 1]) selD.value = p[1];
+    }
+    if (p[2]) {
+      var i = SIGLA2IDX[p[2].toLowerCase()];
+      if (i != null) selUF.value = String(i);
+    }
+  }
+  /* a chamada fica após as opções do escopo existirem */
+
+  var brOpt = document.createElement("option");
+  brOpt.value = "-1";
+  brOpt.textContent = "Brasil (todas as UFs)";
+  selUF.appendChild(brOpt);
+  UFS.forEach(function (u, i) {
+    var o = document.createElement("option");
+    o.value = String(i);
+    o.textContent = u[1];
+    selUF.appendChild(o);
+  });
+  aplicarHash();
+
+  /* ---- estado da seleção de estado(s) ---- */
+  var MODO = "um";       // "um" | "comparar"
+  var SELS = [];         // índices de UF em modo comparar (ordem de marcação)
+
+  function setModo(m) {
+    MODO = m;
+    $("mode-um").className = m === "um" ? "on" : "";
+    $("mode-cmp").className = m === "comparar" ? "on" : "";
+    var cmp = m === "comparar";
+    $("cmp-count").hidden = !cmp;
+    $("uf-chips").className = cmp ? "show" : "";
+    $("state-panel").hidden = cmp;
+    $("cmp-grid").hidden = !cmp;
+    $("cmp-empty").hidden = !cmp || SELS.length > 0;
+    $("evo-single").hidden = cmp || !serieTem();
+    $("evo-multi").hidden = !cmp;
+    if (cmp && !SELS.length) prefillCmp();
+    renderFicha();
+    renderEvo();
+    renderMapa();
+    renderMatriz();
+  }
+  function serieTem() {
+    if (+selUF.value < 0) return true;
+    var o = +selO.value;
+    for (var dd = o + 1; dd <= ANOS[ANOS.length - 1]; dd++) {
+      var r = ufPair(+selUF.value, o, dd);
+      if (r.v || r.d || r.p) return true;
+    }
+    return false;
+  }
+  function prefillCmp() {
+    var o = +selO.value, dd = +selD.value;
+    var rank = UFS.map(function (u, i) { return { i: i, v: ufPair(i, o, dd).v }; })
+      .sort(function (a, b) { return b.v - a.v; }).slice(0, 4).map(function (x) { return x.i; });
+    var ui = +selUF.value;
+    if (ui >= 0) { rank = [ui].concat(rank.filter(function (x) { return x !== ui; })).slice(0, 4); }
+    rank.forEach(function (i) { $("chip-" + i).checked = true; });
+    SELS = rank.slice();
+    syncChipsUI();
+  }
+  function syncChipsUI() {
+    SELS.forEach(function (i) { $("chip-" + i).classList.add("on"); });
+    UFS.forEach(function (u, i) {
+      var el = $("chip-" + i);
+      if (el) el.classList.toggle("on", el.checked);
+    });
+    $("cmp-count").textContent = SELS.length + " selecionados para comparar";
+    $("cmp-empty").hidden = SELS.length > 0;
+  }
+
+  /* chips */
+  UFS.forEach(function (u, i) {
+    var lb = document.createElement("label");
+    lb.className = "chip";
+    lb.id = "chipbox-" + i;
+    var inp = document.createElement("input");
+    inp.type = "checkbox";
+    inp.id = "chip-" + i;
+    inp.addEventListener("change", function () {
+      if (inp.checked) {
+          SELS.push(i);
+      } else {
+        SELS = SELS.filter(function (x) { return x !== i; });
+      }
+      syncChipsUI();
+      renderFicha();
+      renderEvo();
+      renderMapa();
+    });
+    var txt = document.createElement("span");
+    txt.textContent = u[1];
+    lb.appendChild(inp);
+    lb.appendChild(txt);
+    $("uf-chips").appendChild(lb);
+  });
+  $("mode-um").addEventListener("click", function () { setModo("um"); });
+  $("mode-cmp").addEventListener("click", function () { setModo("comparar"); });
+
+  /* ---- renders ---- */
+  function renderResumo() {
+    var o = +selO.value, dd = +selD.value;
+    var ui = +selUF.value;
+    var br = agrega(o, dd);
+    var r;
+    if (ui < 0) {
+      r = br;
+    } else {
+      var rec = ufPair(ui, o, dd);
+      r = { v: rec.v || 0, d: rec.d || 0, p: rec.p || 0, dv: rec.dv || [], dd: rec.dd || [], n: 1 };
+    }
+    $("badge-valor").textContent = resumo(r.v);
+    $("badge-rotulo").textContent = "viraram soja · " + o + " → " + dd;
+    $("janela-txt").textContent = o + " → " + dd;
+    $("st-soja-dd").textContent = resumo(r.v + r.p);
+    $("st-virou").textContent = resumo(r.v);
+    $("st-deixou").textContent = resumo(r.d);
+    $("st-perm").textContent = resumo(r.p);
+    $("st-saldo").textContent = resumo(r.v - r.d);
+    $("st-ufs").textContent = ui < 0 ? (r.n + " de 27") : pct(r.v + r.p, br.v + br.p);
+    $("st-ufs-l").textContent = ui < 0 ? "UFs com soja na janela" : "Soja do escopo ÷ soja do Brasil";
+    $("rank-desc").textContent = "Barra única empilhada por UF — virou (verde), deixou de ser (âmbar) e permaneceu (cinza) entre " + o + " e " + dd + ", em hectares, numa única escala para preservar as proporções reais." + (ui >= 0 ? " O estado do escopo aparece destacado." : "");
+    $("vg-eyebrow").textContent = ui < 0 ? "Panorama nacional" : "Panorama: " + UFS[ui][1];
+    $("vg-title").textContent = ui < 0 ? "O balanço da janela, em números" : "O balanço de " + UFS[ui][1] + " na janela";
+    $("vg-desc").textContent = ui < 0
+      ? "Totais do Brasil para a trajetória selecionada no console, agregados sobre as 27 unidades federativas. Valores em hectares, medidos sobre malhas de 10 m."
+      : "Totais de " + UFS[ui][1] + " na trajetória do console (em hectares, malhas de 10 m). O card “UFs com soja” mostra a fatia do estado sobre a soja do Brasil nesta mesma janela; escolha o escopo Brasil para voltar aos comparativos nacionais.";
+    $("comp-v-hint").textContent = "Composição das áreas que viraram soja (" + resumo(r.v) + ") pelas classes de uso no ano de início (" + o + ").";
+    $("comp-d-hint").textContent = "Composição das áreas que deixaram de ser soja (" + resumo(r.d) + ") pelas classes de uso no ano de fim (" + dd + ").";
+    return r;
+  }
+
+  function renderRanking(r) {
+    var o = +selO.value, dd = +selD.value;
+    var ui = +selUF.value;
+    var lista = UFS.map(function (u, i) {
+      var rec = ufPair(i, o, dd);
+      return { i: i, label: u[1], v: rec.v || 0, d: rec.d || 0, p: rec.p || 0 };
+    });
+    lista.forEach(function (e) { e.t = e.v + e.d + e.p; });
+    lista.sort(function (a, b) { return (b.v - a.v) || (b.d - a.d); });
+    var comArea = lista.filter(function (e) { return e.t > 0; });
+    var maxT = lista.reduce(function (a, e) { return Math.max(a, e.t); }, 0) || 1;
+    if (!comArea.length) {
+      $("rank-list").innerHTML = "";
+      $("rank-empty").hidden = false;
+      $("rank-empty").textContent = "Nenhuma área da classe Soja registrada nesta janela — a classe não estava presente nos anos selecionados.";
+      $("rank-scale").textContent = "";
+      return;
+    }
+    $("rank-empty").hidden = true;
+    $("rank-scale").textContent = "Uma barra empilhada por UF, numa única escala (maior UF da janela: " + resumo(maxT) + "): o que virou (verde), o que deixou de ser (âmbar) e o que permaneceu (cinza) têm entre si e entre estados a proporção real. Valores dentro da barra quando cabem; no direito, “mant.” = soja no ano final (virou + permaneceu) e o saldo líquido.";
+    var html = "", ordem = 0;
+    comArea.forEach(function (e) {
+      ordem++;
+      var largura = 100 * e.t / maxT;
+      function seg(cls, area) {
+        if (area <= 0) return "";
+        var frac = area / e.t;
+        var rot = frac >= 0.14 ? '<span class="seg-rot num">' + resumo(area) + '</span>' : "";
+        return '<span class="seg ' + cls + '" style="flex:' + area + '" data-lbl="' + resumo(area) + ' · ' + pct(area, e.t)
+          + '" title="' + resumo(area) + ' (' + pct(area, e.t) + ')">' + rot + '</span>';
+      }
+      html += '<div class="rank-row' + (MODO === "um" && e.i === ui ? ' hl' : '') + '"><div class="rank-head">'
+        + '<span class="pos num">' + String(ordem).padStart(2, "0") + '</span>'
+        + '<span class="uf">' + e.label + '</span>'
+        + '<span class="val num">' + resumo(e.v + e.p) + ' mant. · saldo ' + resumo(e.v - e.d) + '</span></div>'
+        + '<div class="bar-track"><div class="bar-stack" style="width:' + largura.toFixed(1) + '%">'
+        + seg("seg-sd", e.d) + seg("seg-se", e.v) + seg("seg-sp", e.p)
+        + '</div></div></div>';
+    });
+    $("rank-list").innerHTML = html;
+  }
+
+  function renderEstrutura(r) {
+    var t = r.v + r.d + r.p;
+    $("estrutura-hint").textContent = "Proporção de cada movimento sobre o total de área envolvida (" + resumo(t) + ") na trajetória " + +selO.value + " → " + +selD.value + ".";
+    $("estrutura-bar").innerHTML = t > 0
+      ? '<span class="seg seg-se" style="flex:' + r.v + '" title="' + pct(r.v, t) + '"></span>'
+        + '<span class="seg seg-sd" style="flex:' + r.d + '" title="' + pct(r.d, t) + '"></span>'
+        + '<span class="seg seg-sp" style="flex:' + r.p + '" title="' + pct(r.p, t) + '"></span>'
+      : '<span class="seg" style="flex:1"></span>';
+    $("estrutura-legend").innerHTML = [
+      { sw: "var(--forest)", nm: "Virou soja", v: r.v },
+      { sw: "var(--atencao)", nm: "Deixou de ser soja", v: r.d },
+      { sw: "var(--perm)", nm: "Permaneceu soja", v: r.p }
+    ].map(function (c) {
+      return '<div class="comp-item"><span class="sw" style="background:' + c.sw + '"></span>'
+        + '<span class="nm">' + c.nm + '</span><span class="pv num">' + pct(c.v, t) + ' · ' + resumo(c.v) + '</span></div>';
+    }).join("");
+  }
+
+  function renderComp(total, src, barId, legId) {
+    var comps = classesDe(src).filter(function (c) { return c.area > 0; });
+    if (!comps.length) {
+      $(barId).innerHTML = '<span class="seg" style="flex:1"></span>';
+      $(legId).innerHTML = '<div class="comp-item"><span class="nm" style="color:var(--muted)">Sem área registrada nesta janela.</span></div>';
+      return;
+    }
+    var top = comps.slice(0, 8), resto = comps.slice(8);
+    var segs = top.concat([{ id: null, area: resto.reduce(function (a, c) { return a + c.area; }, 0) }]).filter(function (c) { return c.area > 0; });
+    $(barId).innerHTML = segs.map(function (c) {
+      var cor = c.id === null ? "#c3cdc6" : (CORES[c.id] || corCls(c.id));
+      return '<span class="seg" style="flex:' + Math.max(c.area, 0.01) + ';background:' + cor + '" title="' + (c.id === null ? "Outras classes" : CLS[c.id]) + '"></span>';
+    }).join("");
+    $(legId).innerHTML = segs.map(function (c) {
+      var cor = c.id === null ? "#c3cdc6" : (CORES[c.id] || corCls(c.id));
+      return '<div class="comp-item"><span class="sw" style="background:' + cor + '"></span>'
+        + '<span class="nm">' + (c.id === null ? "Outras classes" : CLS[c.id]) + '</span>'
+        + '<span class="pv num">' + pct(c.area, total) + ' · ' + resumo(c.area) + '</span></div>';
+    }).join("");
+  }
+
+  /* ---- mapa ---- */
+  var svgNS = "http://www.w3.org/2000/svg";
+  var SVG = null;
+  if (DADOS.mapa) {
+    SVG = document.createElementNS(svgNS, "svg");
+    SVG.setAttribute("viewBox", DADOS.mapa.viewBox);
+    DADOS.mapa.locs.forEach(function (l) {
+      var p = document.createElementNS(svgNS, "path");
+      p.setAttribute("d", l[1]);
+      p.setAttribute("id", "mp-" + l[0]);
+      SVG.appendChild(p);
+    });
+    $("brazil-map").appendChild(SVG);
+  }
+  var tip = $("mapa-tip");
+
+  function gK(metrica) { return metrica.charAt(1); }
+  function quantisTh(vals, K) {
+    var pos = vals.filter(function (v) { return v > 0; }).sort(function (a, b) { return a - b; });
+    var th = [];
+    for (var i = 1; i < K; i++) th.push(pos.length ? pos[Math.floor(pos.length * i / K)] : 0);
+    return th;
+  }
+  function binDe(v, th) { var b = 0; while (b < th.length && v > th[b]) b++; return b; }
+  function siglaDe(id) { return id.slice(id.indexOf("-") + 1); }
+  function valoresMapa(o, dd, metrica) {
+    return UFS.map(function (u, i) {
+      var r = ufPair(i, o, dd);
+      if (metrica === "virou") return r.v;
+      if (metrica === "deixou") return r.d;
+      if (metrica === "perm") return r.p;
+      if (metrica === "sojad") return r.v + r.p;
+      if (metrica.charAt(0) === "g" && metrica.length === 2) {
+        var s = 0, ids = GRUPOS[+metrica.charAt(1)].ids;
+        (r.dv || []).forEach(function (c) { if (ids[c[0]]) s += c[1]; });
+        return s;
+      }
+      return r.v - r.d;
+    });
+  }
+
+  function renderMapa() {
+    if (!SVG) return;
+    var o = +selO.value, dd = +selD.value;
+    var metrica = $("mapa-metrica").value;
+    var vals = valoresMapa(o, dd, metrica);
+    var max = vals.reduce(function (a, v) { return Math.max(a, Math.abs(v)); }, 0) || 0;
+    var min = metrica === "saldo" ? Math.min.apply(null, vals) : 0;
+    var maxPos = Math.max.apply(null, vals);
+    var dmap = {
+      virou: "área que virou soja", deixou: "área que deixou de ser soja",
+      saldo: "área líquida (virou − deixou)", perm: "área que permaneceu soja",
+      sojad: "área total de soja no ano final"
+    };
+    if (metrica.charAt(0) === "g") dmap[metrica] = "área vinda de " + GRUPOS[+gK(metrica)].tit;
+    $("mapa-desc").textContent = "Cada UF pintada pela " + dmap[metrica] + " entre " + o + " e " + dd + ".";
+    if (max <= 0) {
+      SVG.querySelectorAll("path").forEach(function (p) { p.setAttribute("fill", "#edf1eb"); });
+      $("mapa-grad").style.background = "#edf1eb";
+      $("mapa-min").textContent = "0"; $("mapa-max").textContent = "sem dados";
+      $("mapa-top").innerHTML = '<li><span class="uf" style="color:var(--muted)">Nenhum valor nesta janela.</span></li>';
+    } else {
+      SVG.querySelectorAll("path").forEach(function (p) {
+        var i = SIGLA2IDX[p.id.slice(3)];
+        var v = vals[i];
+        var cor;
+        if (metrica === "saldo") cor = corSaldo(v, max);
+        else {
+          var r = metrica.charAt(0) === "g" ? GRUPOS[+gK(metrica)].rampa : RAMPA[metrica];
+          cor = mix(r[0], r[1], Math.max(v, 0) <= 0 ? 0 : Math.log1p(Math.max(v, 0)) / Math.log1p(max));
+        }
+        p.setAttribute("fill", cor);
+      });
+      var grad;
+      if (metrica === "saldo") {
+        grad = "linear-gradient(90deg," + SALDO_NEG + "," + SALDO_MEIO + " 50%," + SALDO_POS + ")";
+        $("mapa-min").textContent = "−" + resumo(Math.abs(min)).replace("−", "");
+        $("mapa-max").textContent = "+" + resumo(maxPos).replace("+", "");
+      } else {
+        var rg = metrica.charAt(0) === "g" ? GRUPOS[+gK(metrica)].rampa : RAMPA[metrica];
+        grad = "linear-gradient(90deg," + rg[0] + "," + rg[1] + ")";
+        $("mapa-min").textContent = "0";
+        $("mapa-max").textContent = resumo(max);
+      }
+      $("mapa-grad").style.background = grad;
+      var top = vals.map(function (v, i) { return { i: i, v: v }; })
+        .sort(function (a, b) { return Math.abs(b.v) - Math.abs(a.v); }).slice(0, 5);
+      $("mapa-top").innerHTML = top.map(function (x, k) {
+        return '<li><span class="pos num">' + (k + 1) + '.</span><span class="uf">' + UFS[x.i][1] + '</span><span class="v num">' + resumo(x.v) + '</span></li>';
+      }).join("");
+    }
+    marcaSelecao();
+  }
+
+  function marcaSelecao() {
+    if (!SVG) return;
+    SVG.querySelectorAll("path").forEach(function (p) {
+      p.classList.remove("sel"); p.classList.remove("cmp");
+    });
+    if (MODO === "um" && +selUF.value >= 0) {
+     var p = document.getElementById("mp-" + CODE2SIGLA[UFS[+selUF.value][0]]);
+      if (p) p.classList.add("sel");
+    } else if (MODO === "comparar") {
+      SELS.forEach(function (i) {
+        var p = document.getElementById("mp-" + CODE2SIGLA[UFS[i][0]]);
+        if (p) p.classList.add("cmp");
+      });
+    }
+  }
+
+  if (SVG) {
+    SVG.addEventListener("mousemove", function (e) {
+      var path = e.target.closest ? e.target.closest("path") : null;
+      if (!path) { tip.style.opacity = 0; return; }
+      var i = SIGLA2IDX[path.id.slice(3)];
+      if (i == null) { tip.style.opacity = 0; return; }
+      var o = +selO.value, dd = +selD.value;
+      var r = ufPair(i, o, dd);
+      tip.innerHTML = '<div class="t-nome">' + UFS[i][1] + '</div>'
+        + '<div class="t-metrica num">soja em ' + dd + ': ' + resumo(r.v + r.p) + '</div>'
+        + '<div class="num">' + resumo(r.v) + ' virou · ' + resumo(r.d).replace("−", "") + ' deixou</div>'
+        + '<div class="num">' + resumo(r.p) + ' permaneceu · saldo ' + resumo(r.v - r.d) + '</div>';
+      var rect = $("map-plot").getBoundingClientRect();
+      var x = Math.min(Math.max(e.clientX - rect.left, 90), rect.width - 90);
+      tip.style.left = x + "px";
+      tip.style.top = (e.clientY - rect.top) + "px";
+      tip.style.opacity = 1;
+    });
+    SVG.addEventListener("mouseleave", function () { tip.style.opacity = 0; });
+      SVG.addEventListener("click", function (e) {
+      var path = e.target.closest ? e.target.closest("path") : null;
+      if (!path) return;
+      var i = SIGLA2IDX[path.id.slice(3)];
+      if (i == null) return;
+      selUF.value = String(i);
+      setModo("um");
+    });
+  }
+  $("mapa-metrica").addEventListener("change", renderMapa);
+
+  /* ---- um mapa por grupo de origem da soja nova ---- */
+  function idsSet(arr) {
+    var s = {};
+    arr.forEach(function (x) { s[x] = 1; });
+    return s;
+  }
+  /* paleta dos 6 grupos definida pelo projeto: cor base = ponto máximo da rampa */
+  var BASE6 = [
+    { tit: "Soja em {o} e {d}", cor: "#E83E8C", ids: null },
+    { tit: "Outras culturas → soja", cor: "#A000D8", ids: [9, 18, 19, 20, 35, 36, 40, 41, 46, 47, 48, 62] },
+    { tit: "Pastagem → soja", cor: "#E99400", ids: [15] },
+    { tit: "Mosaico de usos → soja", cor: "#FFD21A", ids: [21, 26] },
+    { tit: "Vegetação nativa → soja", cor: "#238B57", ids: [1, 3, 4, 5, 6, 7, 10, 11, 12, 13, 29, 32, 49, 50, 77, 84] },
+    { tit: "Demais classes → soja", cor: "#777777", ids: [23, 24, 25, 30, 31, 33, 75, 91] }
+  ];
+  var GRUPOS = BASE6.map(function (g) {
+    return { tit: g.tit, cor: g.cor, ids: g.ids ? idsSet(g.ids) : null,
+             rampa: [mixHex("#fafbf9", g.cor, 0.16), g.cor] };
+  });
+  var GSvg = {};
+  function buildGroupSvgs() {
+    if (!DADOS.mapa || $ ("grupos-grid").children.length) return;
+    var html = "";
+    GRUPOS.forEach(function (g, k) {
+      html += '<div class="mini-map"><h4 id="gtitle-' + k + '"></h4>'
+        + '<div class="mm-plot"><div class="bmap" id="gmap-' + k + '"></div>'
+        + '<div class="map-tip num" id="gtip-' + k + '"></div></div>'
+        + '<div class="scale"><span id="gscalemin-' + k + '">0</span><span class="grad" id="gscale-' + k + '"></span>'
+        + '<span id="gscalemax-' + k + '">—</span></div>'
+        + '<p class="hint num" id="gtot-' + k + '">—</p></div>';
+    });
+    $("grupos-grid").innerHTML = html;
+    GRUPOS.forEach(function (g, k) {
+      var svg = document.createElementNS(svgNS, "svg");
+      svg.setAttribute("viewBox", DADOS.mapa.viewBox);
+      DADOS.mapa.locs.forEach(function (l) {
+        var p = document.createElementNS(svgNS, "path");
+        p.setAttribute("d", l[1]);
+        p.setAttribute("id", "gm" + k + "-" + l[0]);
+        svg.appendChild(p);
+      });
+      GSvg[k] = svg;
+      $("gmap-" + k).appendChild(svg);
+      svg.addEventListener("mousemove", function (e) {
+        var path = e.target.closest ? e.target.closest("path") : null;
+        var tip = $("gtip-" + k);
+        if (!path) { tip.style.opacity = 0; return; }
+        var i = SIGLA2IDX[siglaDe(path.id)];
+        if (i == null) { tip.style.opacity = 0; return; }
+        var o = +selO.value, dd = +selD.value;
+        var r = ufPair(i, o, dd);
+        var v = k === 0 ? r.p : somaGrupo(recGrupos(k, r));
+        var rt = r.v + r.p;
+        tip.innerHTML = '<div class="t-nome">' + UFS[i][1] + '</div>'
+          + '<div class="t-metrica num">' + gTitle(k) + ': ' + resumo(v) + '</div>'
+          + (rt > 0 ? '<div class="num">' + pct(v, rt) + ' da soja da UF nesta janela</div>' : "");
+        var plot = $("gmap-" + k).getBoundingClientRect();
+        var x = Math.min(Math.max(e.clientX - plot.left, 80), plot.width - 80);
+        tip.style.left = x + "px";
+        tip.style.top = (e.clientY - plot.top) + "px";
+        tip.style.opacity = 1;
+      });
+      svg.addEventListener("mouseleave", function () { $("gtip-" + k).style.opacity = 0; });
+      svg.addEventListener("click", function (e) {
+        var path = e.target.closest ? e.target.closest("path") : null;
+        if (!path) return;
+        var i = SIGLA2IDX[siglaDe(path.id)];
+        if (i == null) return;
+        selUF.value = String(i);
+        setModo("um");
+      });
+    });
+  }
+  function gTitle(k) {
+    var g = GRUPOS[k];
+    return g.ids === null ? "Soja em " + selO.value + " e " + selD.value : g.tit;
+  }
+  function recGrupos(k, r) { return (r.dv || []); }
+  function somaGrupo(arr) { return arr.reduce(function (a, c) { return a + c[1]; }, 0); }
+
+  function renderGrupos() {
+    var o = +selO.value, dd = +selD.value;
+    buildGroupSvgs();
+    if (!DADOS.mapa) return;
+    var tot = [], max = [], nativaVals = [];
+    GRUPOS.forEach(function (g, k) {
+      $("gtitle-" + k).textContent = k === 0
+        ? "Soja em " + o + " e " + dd
+        : g.tit + " · " + o + " → " + dd;
+    });
+    GRUPOS.forEach(function (g, k) {
+      var vals = UFS.map(function (u, i) {
+        var r = ufPair(i, o, dd);
+        if (k === 0) return r.p;
+        var s = 0;
+        (r.dv || []).forEach(function (c) { if (g.ids[c[0]]) s += c[1]; });
+        return s;
+      });
+      var mx = vals.reduce(function (a, v) { return Math.max(a, v); }, 0);
+      tot[k] = vals.reduce(function (a, v) { return a + v; }, 0);
+      max[k] = mx;
+      if (k === 4) nativaVals = vals;
+      GSvg[k].querySelectorAll("path").forEach(function (p) {
+        var v = vals[SIGLA2IDX[siglaDe(p.id)]];
+        p.setAttribute("fill", mx > 0 && v > 0
+          ? mix(g.rampa[0], g.rampa[1], Math.pow(v / mx, 0.45))
+          : "#f2f4ef");
+      });
+      var grad = "linear-gradient(90deg," + g.rampa[0] + "," + g.rampa[1] + ")";
+      $("gscale-" + k).style.background = grad;
+      $("gscalemax-" + k).textContent = resumo(mx);
+      var topUF = "";
+      var bi = 0;
+      vals.forEach(function (v, i) { if (v > vals[bi]) bi = i; });
+      if (mx > 0) topUF = " · maior: " + UFS[bi][1] + " (" + pct(vals[bi], tot[k]) + ")";
+      $("gtot-" + k).textContent = "Brasil: " + resumo(tot[k]) + topUF;
+    });
+    /* resumo dos seis grupos */
+    var base6 = tot[0] + tot[1] + tot[2] + tot[3] + tot[4] + tot[5];
+    $("g-leg-hint").textContent = "Área de cada grupo sobre o total envolvido (" + resumo(base6) + ") na janela " + o + " → " + dd + ".";
+    $("g-leg").innerHTML = GRUPOS.map(function (g, k) {
+      return '<li><span class="sw" style="background:' + g.rampa[1] + '"></span>'
+        + '<span class="nm">' + gTitle(k) + '</span>'
+        + '<span class="pv num">' + resumo(tot[k]) + ' · ' + pct(tot[k], base6) + '</span></li>';
+    }).join("");
+    /* top nativa */
+    var nt = nativaVals.map(function (v, i) { return { i: i, v: v }; })
+      .sort(function (a, b) { return b.v - a.v; }).filter(function (x) { return x.v > 0; }).slice(0, 6);
+    $("grupos-top-nativa").innerHTML = nt.length
+      ? nt.map(function (x, k) {
+        return '<li><span class="pos num">' + (k + 1) + '.</span><span class="uf">' + UFS[x.i][1]
+          + '</span><span class="v num">' + resumo(x.v) + '</span></li>';
+      }).join("")
+      : '<li><span class="uf" style="color:var(--muted)">Nenhuma área desta origem na janela.</span></li>';
+  }
+
+  /* ---- matriz origem × destino ---- */
+  function escopoMatriz() {
+    if (MODO === "comparar") return -1;                 // Brasil
+    return +selUF.value;                                 // inclui -1 = Brasil
+  }
+  function corMetrica(metrica, v, max) {
+    if (metrica === "saldo") return corSaldo(v, max);
+    var r = metrica.charAt(0) === "g" ? GRUPOS[+gK(metrica)].rampa : RAMPA[metrica];
+    var t = Math.max(v, 0) <= 0 ? 0 : Math.log1p(Math.max(v, 0)) / Math.log1p(max);
+    return mix(r[0], r[1], t);
+  }
+  function renderMatriz() {
+    var o0 = ANOS[0], oMax = ANOS[ANOS.length - 2], dMax = ANOS[ANOS.length - 1];
+    var metrica = $("matriz-metrica").value;
+    var ui = escopoMatriz();
+    var nome = ui < 0 ? "Brasil (todas as UFs)" : UFS[ui][1];
+    $("matriz-escopo").textContent = "Escopo: " + nome
+      + (MODO === "comparar" ? " · no modo comparar a matriz mostra o Brasil" : "")
+      + ". 820 janelas de uma vez.";
+    function val(o, d) {
+      var m = ui < 0 ? agrega(o, d) : ufPair(ui, o, d);
+      if (metrica === "virou") return m.v;
+      if (metrica === "deixou") return m.d;
+      if (metrica === "perm") return m.p;
+      if (metrica === "sojad") return m.v + m.p;
+      if (metrica.charAt(0) === "g" && metrica.length === 2) {
+        var ids = GRUPOS[+gK(metrica)].ids;
+        if (!m.dv) return 0;
+        if (m.dv.forEach) {
+          return m.dv.reduce(function (a, c) { return a + (ids[c[0]] ? c[1] : 0); }, 0);
+        }
+        return Object.keys(m.dv).reduce(function (a, k) { return a + (ids[+k] ? m.dv[k] : 0); }, 0);
+      }
+      return m.v - m.d;
+    }
+    var max = 0, minS = 0, maxPos = 0, presentes = [];
+    var ANOS_S1 = ANOS.slice(0, -1), ANOS_D = ANOS.slice(1);
+    ANOS_S1.forEach(function (o) {
+      ANOS_D.forEach(function (d) {
+        if (d <= o) return;
+        var v = val(o, d);
+        max = Math.max(max, Math.abs(v));
+        minS = Math.min(minS, v); maxPos = Math.max(maxPos, v);
+        presentes.push(v);
+      });
+    });
+    // caixas por quantis: 5 faixas (ou 4+4 no saldo) calibradas pelos próprios dados
+    var K = 5;
+    var thUni = metrica === "saldo" ? null : quantisTh(presentes, K);
+    var thP = metrica === "saldo" ? quantisTh(presentes, 4) : null;
+    var thN = metrica === "saldo" ? quantisTh(presentes.map(function (v) { return -v; }), 4) : null;
+    var linhas = "";
+    ANOS_D.forEach(function (d) {
+      linhas += '<div class="mx-h" data-d="' + d + '"><span>' + d + '</span></div>';
+    });
+    ANOS_S1.forEach(function (o) {
+      linhas += '<div class="mx-lbl num" data-o="' + o + '">' + o + '</div>';
+      ANOS_D.forEach(function (d) {
+        if (d <= o) { linhas += '<i class="mx-e"></i>'; return; }
+        var v = val(o, d);
+        var cor = corBin(v);
+        var m = ui < 0 ? agrega(o, d) : ufPair(ui, o, d);
+        linhas += '<div class="mx-c" data-o="' + o + '" data-d="' + d + '" style="background:' + cor
+          + '" title="' + o + ' → ' + d + ' · virou ' + resumo(m.v) + ' · deixou ' + resumo(m.d)
+          + ' · permaneceu ' + resumo(m.p) + '"></div>';
+      });
+    });
+    function corBin(v) {
+      if (metrica === "saldo") {
+        if (v === 0) return SALDO_MEIO;
+        if (v > 0) return mix(SALDO_MEIO, SALDO_POS, binDe(v, thP) / 3);
+        return mix(SALDO_NEG_CLARO, SALDO_NEG, binDe(-v, thN) / 3);
+      }
+      var r = metrica.charAt(0) === "g" ? GRUPOS[+gK(metrica)].rampa : RAMPA[metrica];
+      return mix(r[0], r[1], binDe(v, thUni) / (K - 1));
+    }
+    function gradDegraus(seq) {
+      var n = seq.length;
+      return "linear-gradient(90deg," + seq.map(function (c, i) {
+        return c + " " + (i * 100 / n).toFixed(1) + "% " + ((i + 1) * 100 / n).toFixed(1) + "%";
+      }).join(",") + ")";
+    }
+    $("matriz-grid").innerHTML = '<div class="mx-lbl" style="text-align:left;padding-right:6px;line-height:normal;font-size:1rem;font-weight:800;color:var(--forest);background:#e6efdf;border-radius:4px;padding:6px 8px 4px 4px;margin-bottom:2px">origem ↓<br><span style="color:var(--muted);font-weight:700">destino →</span></div>' + linhas;
+    if (max <= 0) {
+      $("matriz-grad").style.background = "#edf1eb";
+      $("matriz-min").textContent = "0"; $("matriz-max").textContent = "sem dados";
+    } else if (metrica === "saldo") {
+      var seq, cN = [0, 1, 2, 3].map(function (b) { return mix(SALDO_NEG_CLARO, SALDO_NEG, b / 3); });
+      var cP = [0, 1, 2, 3].map(function (b) { return mix(SALDO_MEIO, SALDO_POS, b / 3); });
+      seq = cN.slice().reverse().concat([SALDO_MEIO], cP);
+      $("matriz-grad").style.background = gradDegraus(seq);
+      $("matriz-min").textContent = "−" + resumo(Math.abs(minS));
+      $("matriz-max").textContent = "+" + resumo(maxPos);
+    } else {
+      var seq, rgm = metrica.charAt(0) === "g" ? GRUPOS[+gK(metrica)].rampa : RAMPA[metrica];
+      seq = [0, 1, 2, 3, 4].map(function (b) { return mix(rgm[0], rgm[1], b / 4); });
+      $("matriz-grad").style.background = gradDegraus(seq);
+      $("matriz-min").textContent = "0";
+      $("matriz-max").textContent = resumo(max);
+    }
+  }
+  $("matriz-metrica").addEventListener("change", renderMatriz);
+  (function () {
+    var grid = $("matriz-grid"), ativo = [];
+    function limpaHi() {
+      ativo.forEach(function (el) { el.classList.remove("mx-hi", "mx-vi"); });
+      ativo = [];
+    }
+    grid.addEventListener("mousemove", function (e) {
+      var c = e.target.closest && e.target.closest(".mx-c");
+      if (!c || !c.hasAttribute("data-d")) { limpaHi(); return; }
+      if (ativo.length && ativo[0] === c) return;
+      limpaHi();
+      c.classList.add("mx-vi");
+      ativo.push(c);
+      var hd = grid.querySelector('.mx-h[data-d="' + c.getAttribute("data-d") + '"]');
+      var lo = grid.querySelector('.mx-lbl[data-o="' + c.getAttribute("data-o") + '"]');
+      if (hd) { hd.classList.add("mx-hi"); ativo.push(hd); }
+      if (lo) { lo.classList.add("mx-hi"); ativo.push(lo); }
+    });
+    grid.addEventListener("mouseleave", limpaHi);
+  })();
+  $("matriz-grid").addEventListener("click", function (e) {
+    var c = e.target.closest ? e.target.closest(".mx-c") : null;
+    if (!c) return;
+    selO.value = c.getAttribute("data-o");
+    opcoesDestino();
+    selD.value = c.getAttribute("data-d");
+    renderAll();
+  });
+
+  /* ---- sankey origem → soja → destino (SVG, fitas em Bézier) ---- */
+  function trunc(s, n) { return s.length > n ? s.slice(0, n - 1) + "…" : s; }
+  function sankeySVG(o, dd, nome) {
+    var ui = +selUF.value;
+    var rec;
+    if (ui < 0) { var r = agrega(o, dd); rec = { v: r.v, d: r.d, dv: r.dv || [], dd: r.dd || [] }; }
+    else rec = ufPair(ui, o, dd);
+    var Vs = classesDe(rec.dv).filter(function (c) { return c.area > 0; });
+    var Ds = classesDe(rec.dd).filter(function (c) { return c.area > 0; });
+    if (!Vs.length && !Ds.length) {
+      return '<p class="hint" style="margin-top:10px">Nenhum fluxo de/para soja nesta janela — ajuste os anos de início e fim no console.</p>';
+    }
+    function pack(lst) {
+      var t = lst.slice(0, 6);
+      var resto = lst.slice(6);
+      if (resto.length) t.push({ id: null, area: resto.reduce(function (a, c) { return a + c.area; }, 0) });
+      return t;
+    }
+    Vs = pack(Vs); Ds = pack(Ds);
+    var W = 1088, HL = 238;
+    var NODEW = 120;
+    var GUT_E = 176, GUT_D = 834;
+
+    function fita(x0, y0, x1, y1, h1, h2, cor, tit) {
+      var c = (x0 + x1) / 2;
+      return '<path class="fita" d="M' + x0 + ',' + y0 + ' C' + c + ',' + y0 + ' ' + c + ',' + y1 + ' ' + x1 + ',' + y1
+        + ' L' + x1 + ',' + (y1 + h2) + ' C' + c + ',' + (y1 + h2) + ' ' + c + ',' + (y0 + h1) + ' ' + x0 + ',' + (y0 + h1)
+        + ' Z" fill="' + cor + '" opacity="0.38"><title>' + tit + '</title></path>';
+    }
+    function diagrama(lst, total, YTOP, fluxoSai, corNode, nomeNode) {
+      // fluxoSai=false: classes (esquerda) → soja (direita). true: soja (esquerda) → classes (direita)
+      var xNode = fluxoSai ? 130 : 838;
+      var frags = "";
+      var titulo = fluxoSai
+        ? "Para onde foi a soja que saiu · " + o + " → " + dd + " · " + resumo(total)
+        : "De onde veio a soja nova · " + o + " → " + dd + " · " + resumo(total);
+      frags += '<text x="176" y="' + (YTOP - 12) + '" text-anchor="start" font-size="13.5" font-weight="800" fill="#18362d">' + titulo + '</text>';
+      var y = YTOP, cum = 0;
+      lst.forEach(function (c) {
+        var h = HL * c.area / total;
+        var yC = YTOP + (cum / total) * HL;
+        var nm = c.id === null ? "Outras classes" : CLS[c.id];
+        var cor = c.id === null ? "#c3cdc6" : (CORES[c.id] || corCls(c.id));
+        var titF = nm + " — " + resumo(c.area) + " (" + pct(c.area, total) + ")";
+        var bx = fluxoSai ? 704 : 186;
+        var xNodeBorda = fluxoSai ? 250 : 838;
+        var xClBorda = fluxoSai ? bx : bx + NODEW;
+        // fita: de classe → centro (esq) ou centro → classe (dir)
+        if (fluxoSai) frags += fita(xNodeBorda, yC, xClBorda, y, h, h, cor, titF);
+        else frags += fita(xClBorda, y, xNodeBorda, yC, h, h, cor, titF);
+        // nó da classe
+        frags += '<rect x="' + bx + '" y="' + y + '" width="' + NODEW + '" height="' + h + '" fill="' + cor + '"><title>' + titF + '</title></rect>';
+        // rótulo no beco externo (duas linhas)
+        var lx = fluxoSai ? GUT_D : GUT_E;
+        if (h >= 22) {
+          frags += '<text x="' + lx + '" y="' + (y + h / 2 - 1) + '" text-anchor="' + (fluxoSai ? "start" : "end")
+            + '" font-size="11.5" font-weight="700" fill="#18362d">' + trunc(nm, 21) + '</text>'
+            + '<text x="' + lx + '" y="' + (y + h / 2 + 12) + '" text-anchor="' + (fluxoSai ? "start" : "end")
+            + '" font-size="10.5" font-weight="600" fill="#5f7169">' + resumo(c.area) + ' · ' + pct(c.area, total) + '</text>';
+        } else if (h >= 16) {
+          frags += '<text x="' + lx + '" y="' + (y + h / 2 + 3.5) + '" text-anchor="' + (fluxoSai ? "start" : "end")
+            + '" font-size="10.5" font-weight="700" fill="#5f7169">' + trunc(nm, 17) + '</text>';
+        }
+        y += h;
+        cum += c.area;
+      });
+      // nó central
+      frags += '<rect x="' + xNode + '" y="' + YTOP + '" width="' + NODEW + '" height="' + HL + '" rx="6" style="fill:' + corNode + '"><title>' + nomeNode + '</title></rect>'
+        + '<text x="' + (xNode + NODEW / 2) + '" y="' + (YTOP + HL / 2 - 3) + '" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">' + nomeNode.toUpperCase() + '</text>'
+        + '<text x="' + (xNode + NODEW / 2) + '" y="' + (YTOP + HL / 2 + 14) + '" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">' + resumo(total) + '</text>';
+      return frags;
+    }
+    var Y1 = 34, Y2 = Y1 + HL + 70;
+    var H = Ds.length ? (Y2 + HL + 30) : (Y1 + HL + 30);
+    var svg = '<svg class="esvg" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Sankey de fluxos de uso da terra (' + nome + ', ' + o + ' → ' + dd + ')">';
+    if (Vs.length) svg += diagrama(Vs, rec.v, Y1, false, "var(--forest)", "soja nova");
+    if (Ds.length) svg += diagrama(Ds, rec.d, Y2, true, "var(--atencao)", "soja que saiu");
+    svg += '</svg>';
+    return svg;
+  }
+
+  /* ---- ficha: um estado (expandido) ---- */
+  function renderFicha() {
+    if (MODO === "comparar") { renderComparar(); return; }
+    var o = +selO.value, dd = +selD.value;
+    var ui = +selUF.value;
+    var nome = ui < 0 ? "Brasil (todas as UFs)" : UFS[ui][1];
+    var rec, r = null;
+    if (ui < 0) { r = agrega(o, dd); rec = { v: r.v, d: r.d, p: r.p, dv: r.dv, dd: r.dd }; }
+    else { rec = ufPair(ui, o, dd); }
+    var panel = $("state-panel");
+    $("ef-eyebrow").textContent = MODO === "comparar"
+      ? "Comparação entre estados"
+      : (ui < 0 ? "Ficha do Brasil" : "Ficha: " + UFS[ui][1]);
+    var tot = rec.v + rec.d + rec.p;
+    if (!tot) {
+      panel.innerHTML = '<div class="state-empty">Nenhuma área da classe Soja registrada entre ' + o + ' e ' + dd + ' para esta seleção. Experimente outra janela no console acima.</div>';
+      marcaSelecao();
+      return;
+    }
+    var totHtml = '<div class="state-tot">'
+      + '<div class="kv"><div class="k">Soja em ' + dd + '</div><div class="n num">' + ha(rec.v + rec.p) + '</div></div>'
+      + '<div class="kv"><div class="k">Virou soja</div><div class="n num">' + ha(rec.v) + '</div></div>'
+      + '<div class="kv"><div class="k">Deixou de ser soja</div><div class="n num">' + ha(rec.d) + '</div></div>'
+      + '<div class="kv"><div class="k">Permaneceu soja</div><div class="n num">' + ha(rec.p) + '</div></div>'
+      + '<div class="kv"><div class="k">Saldo</div><div class="n num">' + ha(rec.v - rec.d) + '</div></div>'
+      + '</div>';
+    function coluna(titulo, hint, arr, emptyMsg) {
+      var cls = classesDe(arr).filter(function (c) { return c.area > 0; });
+      if (!cls.length) return '<div class="state-cols-col"><h3>' + titulo + '</h3><p class="hint">' + emptyMsg + '</p></div>';
+      var max = cls[0].area;
+      return '<div class="state-cols-col"><h3>' + titulo + '</h3><p class="hint">' + hint + '</p>'
+        + '<div class="cls-list">' + cls.slice(0, 12).map(function (c) {
+          var cor = CORES[c.id] || corCls(c.id);
+          return '<div class="cls-item"><span class="sw" style="background:' + cor + '"></span>'
+            + '<div class="line"><span class="nm">' + CLS[c.id] + '</span><span class="v num">' + ha(c.area) + ' <span style="color:var(--vazio)">(' + pct(c.area, tot) + ')</span></span></div>'
+            + '<div class="cbar"><i style="width:' + Math.max(1.5, 100 * c.area / max).toFixed(1) + '%;background:' + cor + '"></i></div></div>';
+        }).join("") + '</div></div>';
+    }
+    panel.innerHTML = totHtml
+      + '<div class="state-cols">'
+      + coluna("Origem da soja nova", "Em que uso a terra estava antes de virar soja, em " + o + ".", rec.dv, "Nenhuma área virou soja nesta seleção na janela analisada.")
+      + coluna("Destino da soja perdida", "Para qual uso a terra foi quando deixou de ser soja, em " + dd + ".", rec.dd, "Nenhuma área deixou de ser soja nesta seleção na janela analisada.")
+      + '</div>'
+      + '<p class="hint" style="margin-top:16px">' + nome + " · " + o + " → " + dd + (ui < 0 && r ? " · " + r.n + " UFs com soja" : "") + '</p>'
+      + '<div class="sankey-wrap"><h3>Fluxos da janela — sankey de origem e destino</h3>'
+      + '<p class="hint" style="margin-top:2px">Classes de origem à esquerda, classes de destino à direita; o nó central agrupa a soja movimentada. Rótulos com valor e participação; passe o mouse nas fitas.</p>'
+      + sankeySVG(o, dd, nome)
+      + '</div>';
+    marcaSelecao();
+  }
+
+  /* ---- ficha: comparar estados ---- */
+  function miniTop3(arr, ano, tipo) {
+    var cls = classesDe(arr || []).filter(function (c) { return c.area > 0; }).slice(0, 3);
+    return '<div><div class="col-tit">' + tipo + " (" + ano + ')</div>'
+      + (cls.length
+        ? cls.map(function (c) {
+          return '<div class="li"><span class="nm">' + CLS[c.id] + '</span><span class="vv num">' + resumo(c.area) + '</span></div>';
+        }).join("")
+        : '<div class="hint">sem área</div>')
+      + '</div>';
+  }
+  function renderComparar() {
+    var o = +selO.value, dd = +selD.value;
+    var grid = $("cmp-grid");
+    if (!SELS.length) { grid.innerHTML = ""; return; }
+    grid.innerHTML = SELS.map(function (i) {
+      var rec = ufPair(i, o, dd);
+      var t = rec.v + rec.d + rec.p;
+      var bar = t > 0
+        ? '<div class="cmp-bar">'
+          + '<span class="seg seg-se" style="flex:' + rec.v + '" title="' + pct(rec.v, t) + '"></span>'
+          + '<span class="seg seg-sd" style="flex:' + rec.d + '" title="' + pct(rec.d, t) + '"></span>'
+          + '<span class="seg seg-sp" style="flex:' + rec.p + '" title="' + pct(rec.p, t) + '"></span>'
+          + '</div>'
+        : '<div class="cmp-bar"><span class="seg" style="flex:1"></span></div>';
+      var vals = '<div class="cmp-vals num">'
+        + '<span class="key"><span class="sw" style="background:var(--forest)"></span> Soja em ' + dd + ': ' + resumo(rec.v + rec.p) + '</span>'
+        + '<span class="key"><span class="sw" style="background:var(--forest)"></span> Virou: ' + resumo(rec.v) + '</span>'
+        + '<span class="key"><span class="sw" style="background:var(--atencao)"></span> Deixou: ' + resumo(rec.d).replace("−", "") + '</span>'
+        + '<span class="key"><span class="sw" style="background:var(--perm)"></span> Permaneceu: ' + resumo(rec.p) + '</span>'
+        + '</div>';
+      var saldoCor = rec.v - rec.d >= 0 ? "var(--ok)" : "var(--atencao)";
+      return '<div class="cmp-card"><div class="cmp-head"><h4>' + UFS[i][1] + '</h4>'
+        + '<span class="saldo num" style="color:' + saldoCor + '">saldo ' + resumo(rec.v - rec.d) + '</span></div>'
+        + bar + vals
+        + (t > 0
+          ? '<div class="cmp-cols">' + miniTop3(rec.dv, o, "Origem") + miniTop3(rec.dd, dd, "Destino") + '</div>'
+          : '<p class="hint" style="margin-top:10px">Sem soja registrada nesta UF nesta janela.</p>')
+        + '</div>';
+    }).join("");
+  }
+
+  /* ---- evolução ---- */
+  function serieOrigem(ui, o) {
+    var serie = [];
+    var tem = false;
+    for (var dd = o + 1; dd <= ANOS[ANOS.length - 1]; dd++) {
+      var rec = ui < 0 ? agrega(o, dd) : ufPair(ui, o, dd);
+      if (rec.v || rec.d || rec.p) tem = true;
+      serie.push({ ano: dd, v: rec.v, d: rec.d, p: rec.p });
+    }
+    return { serie: serie, tem: tem };
+  }
+  function colunas(serie, hVmax, hDmax, mini) {
+    var cols = "";
+    serie.forEach(function (s) {
+      var hV = s.v > 0 ? Math.max(0.8, 50 * s.v / hVmax) : 0;
+      var hD = s.d > 0 ? Math.max(0.8, 50 * s.d / hDmax) : 0;
+      var t = 'title="' + s.ano + ' · virou ' + fmt.format(Math.round(s.v)) + ' ha · deixou ' + fmt.format(Math.round(s.d)) + ' ha · permaneceu ' + fmt.format(Math.round(s.p)) + ' ha"';
+      cols += '<div class="evo-col">'
+        + '<div class="evo-zone up" ' + t + '>' + (s.v > 0 ? '<i style="height:' + hV.toFixed(2) + '%"></i>' : "") + '</div>'
+        + '<div class="evo-zone down" ' + t + '>' + (s.d > 0 ? '<i style="height:' + hD.toFixed(2) + '%"></i>' : "") + '</div>'
+        + '</div>';
+    });
+    return cols;
+  }
+  /* leitura de valores da evolução (painel sempre visível; hover atualiza) */
+  var S1 = null, IDXD = 0;
+  function roHtml(s) {
+    return '<span class="ano">' + s.ano + '</span>'
+      + '<span><span class="swmini" style="background:var(--forest)"></span>virou <span class="num" style="color:var(--ok)">' + resumo(s.v) + '</span></span>'
+      + '<span><span class="swmini" style="background:var(--atencao)"></span>deixou <span class="num" style="color:var(--atencao)">' + resumo(s.d) + '</span></span>'
+      + '<span><span class="swmini" style="background:var(--perm)"></span>permaneceu <span class="num">' + resumo(s.p) + '</span></span>';
+  }
+  function idxMaxV(serie) {
+    var m = 0;
+    serie.forEach(function (x, k) { if (x.v > serie[m].v) m = k; });
+    return m;
+  }
+  function renderEvo() {
+    var o = +selO.value;
+    var ultimo = ANOS[ANOS.length - 1];
+    if (MODO === "comparar") {
+      $("evo-titulo").textContent = "Comparando trajetórias";
+      $("evo-sub").textContent = "Origem fixa em " + o + " · mini-múltiplos por estado · passe o mouse para ler os valores";
+      S1 = null;
+      var multi = $("evo-multi");
+      if (!SELS.length) { multi.innerHTML = ""; $("evo-empty").hidden = false; $("evo-empty").textContent = "Selecione estados na seção “Um estado ou comparação” para ver suas trajetórias aqui."; return; }
+      var dados = [];
+      var blocks = SELS.map(function (i) {
+        var s = serieOrigem(i, o);
+        var maxV = s.serie.reduce(function (a, x) { return Math.max(a, x.v); }, 0) || 1;
+        var maxD = s.serie.reduce(function (a, x) { return Math.max(a, x.d); }, 0) || 1;
+        dados.push({ serie: s.serie, def: idxMaxV(s.serie) });
+        return '<div class="mini-evo"><h4>' + UFS[i][1] + '</h4>'
+          + '<div class="evo-cols">' + colunas(s.serie, maxV, maxD) + '</div>'
+          + '<div class="evo-readout num"></div>'
+          + '<p class="hint" style="margin-top:4px">origem ' + o + (s.tem ? "" : " · sem soja registrada") + '</p></div>';
+      }).join("");
+      $("evo-empty").hidden = true;
+      multi.innerHTML = blocks;
+      Array.prototype.forEach.call(multi.children, function (card, k) {
+        var dd = dados[k];
+        var ro = card.querySelector(".evo-readout");
+        var cols = card.querySelector(".evo-cols");
+        ro.innerHTML = roHtml(dd.serie[dd.def]);
+        card.addEventListener("mousemove", function (e) {
+          var col = e.target.closest(".evo-col");
+          if (!col) return;
+          var i = Array.prototype.indexOf.call(cols.children, col);
+          if (dd.serie[i]) ro.innerHTML = roHtml(dd.serie[i]);
+        });
+        card.addEventListener("mouseleave", function () { ro.innerHTML = roHtml(dd.serie[dd.def]); });
+      });
+      return;
+    }
+    var ui = +selUF.value;
+    var nome = ui < 0 ? "Brasil (todas as UFs)" : UFS[ui][1];
+    var s = serieOrigem(ui, o);
+    $("evo-sub").textContent = "Origem fixa em " + o + " · destino em cada ano seguinte · " + nome;
+    $("evo-titulo").textContent = nome + " · trajetórias da soja de " + o;
+    if (!s.tem) {
+      S1 = null;
+      $("evo-single").hidden = true;
+      $("evo-empty").hidden = false;
+      $("evo-cols").innerHTML = ""; $("evo-axis").innerHTML = ""; $("evo-line-p").innerHTML = "";
+      return;
+    }
+    $("evo-single").hidden = false;
+    $("evo-empty").hidden = true;
+    var maxV = s.serie.reduce(function (a, x) { return Math.max(a, x.v); }, 0) || 1;
+    var maxD = s.serie.reduce(function (a, x) { return Math.max(a, x.d); }, 0) || 1;
+    var maxP = s.serie.reduce(function (a, x) { return Math.max(a, x.p); }, 0) || 1;
+    $("evo-scale").textContent = "Escalas — virou até " + resumo(maxV) + " · deixou até " + resumo(maxD)
+      + " · permaneceu (linha) até " + resumo(maxP) + " — cada cor na própria escala.";
+    S1 = s.serie;
+    IDXD = idxMaxV(s.serie);
+    $("evo-readout").innerHTML = roHtml(S1[IDXD]);
+    $("evo-cols").innerHTML = colunas(s.serie, maxV, maxD, false);
+    var axis = "";
+    s.serie.forEach(function (x) {
+      axis += '<span>' + ((x.ano === o + 1 || x.ano === ultimo || x.ano % 5 === 0) ? x.ano : "") + '</span>';
+    });
+    $("evo-axis").innerHTML = axis;
+    var boxL = $("evo-line-p");
+    var Wl = Math.min(1280, Math.max(340, boxL.clientWidth || 340)), Hl = 150;
+    var passo = Wl / s.serie.length;
+    var pts = [], dots = "";
+    s.serie.forEach(function (x, k) {
+      var px = k * passo + passo / 2;
+      var py = Hl - 18 - 112 * (maxP > 0 ? x.p / maxP : 0);
+      pts.push(px.toFixed(1) + "," + py.toFixed(1));
+      dots += '<circle cx="' + px.toFixed(1) + '" cy="' + py.toFixed(1) + '" r="3.4" fill="var(--perm)" stroke="#fff" stroke-width="1.2"><title>' + x.ano + ' · permaneceu ' + resumo(x.p) + '</title></circle>';
+    });
+    var base = Hl - 18;
+    function gy(rel) { return (base - 112 * rel).toFixed(1); }
+    var areaPath = pts.length > 1
+      ? "M" + pts[0] + " L" + pts.slice(1).join(" L") + " L" + (Wl - passo / 2).toFixed(1) + "," + base + " L" + (passo / 2).toFixed(1) + "," + base + " Z"
+      : "";
+    $("evo-perm-max").textContent = resumo(maxP);
+    boxL.innerHTML = '<svg viewBox="0 0 ' + Wl + ' ' + Hl + '" style="display:block;width:100%;height:' + Hl + 'px">'
+      + '<line x1="34" y1="' + gy(1) + '" x2="' + Wl + '" y2="' + gy(1) + '" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 3"></line>'
+      + '<line x1="34" y1="' + gy(0.5) + '" x2="' + Wl + '" y2="' + gy(0.5) + '" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 3"></line>'
+      + '<line x1="34" y1="' + base + '" x2="' + Wl + '" y2="' + base + '" stroke="var(--line)" stroke-width="1.4"></line>'
+      + '<text x="2" y="' + (+gy(1) + 3.5) + '" font-size="11" font-weight="700" fill="var(--muted)">' + resumo(maxP) + '</text>'
+      + '<text x="2" y="' + (+gy(0.5) + 3.5) + '" font-size="11" font-weight="700" fill="var(--muted)">' + resumo(maxP / 2) + '</text>'
+      + '<text x="2" y="' + (base + 3.5) + '" font-size="11" font-weight="700" fill="var(--muted)">0</text>'
+      + (areaPath ? '<path d="' + areaPath + '" fill="var(--perm)" opacity="0.18"></path>' : "")
+      + '<polyline points="' + pts.join(" ") + '" fill="none" stroke="var(--perm)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"></polyline>'
+      + dots + '</svg>';
+  }
+
+  /* ---- achados da janela ---- */
+  function gruposDe(rec) {
+    var dv = rec.dv || [];
+    if (!dv.forEach) {
+      var arr = [];
+      Object.keys(dv).forEach(function (k2) { arr.push([+k2, dv[k2]]); });
+      dv = arr;
+    }
+    var tot = [0, 0, 0, 0, 0, 0];
+    dv.forEach(function (c) {
+      var g = -1;
+      for (var i = 1; i < GRUPOS.length && g < 0; i++) if (GRUPOS[i].ids && GRUPOS[i].ids[c[0]]) g = i;
+      if (g < 0) g = 5;
+      tot[g] += c[1];
+    });
+    return tot;
+  }
+  function renderAchados() {
+    var o2 = +selO.value, dd2 = +selD.value, ui = +selUF.value;
+    var r = ui < 0 ? agrega(o2, dd2) : ufPair(ui, o2, dd2);
+    $("achados-sub").textContent = (ui < 0 ? "Brasil" : UFS[ui][1]) + " · " + o2 + " → " + dd2;
+    var fatos = [];
+    if (!(r.v + r.d + r.p)) {
+      fatos.push("Nenhuma área da classe Soja nesta janela para este escopo.");
+    } else {
+      fatos.push("<strong>Soja em " + dd2 + ":</strong> " + resumo(r.v + r.p) + (ui < 0 ? " (" + r.n + " UFs com soja)" : "") + ".");
+      var tv = classesDe(r.dv || []).filter(function (c) { return c.area > 0; });
+      if (tv.length) fatos.push("<strong>Top origem da soja nova:</strong> " + CLS[tv[0].id] + " — " + pct(tv[0].area, r.v) + " das áreas que viraram.");
+      if (ui < 0) {
+        var tops = UFS.map(function (u, i2) { return { n: u[1], v: ufPair(i2, o2, dd2).v }; }).sort(function (a, b) { return b.v - a.v; });
+        if (tops[0].v > 0) fatos.push("<strong>Estado que mais avançou:</strong> " + tops[0].n + " (" + resumo(tops[0].v) + ")" + (tops[1] && tops[1].v > 0 ? "; segue " + tops[1].n + " (" + resumo(tops[1].v) + ")" : "") + ".");
+      } else {
+        var posi = 1;
+        UFS.forEach(function (u, i2) { if (ufPair(i2, o2, dd2).v > r.v) posi++; });
+        fatos.push("<strong>Posição no ranking de expansão:</strong> " + posi + "º entre os 27.");
+      }
+      var d10 = o2 + 10;
+      if (d10 <= ANOS[ANOS.length - 1]) {
+        var r10b = ui < 0 ? agrega(o2, d10) : ufPair(ui, o2, d10);
+        if (r10b.p + r10b.d > 0) fatos.push("<strong>Retenção em 10 anos:</strong> " + pct(r10b.p, r10b.p + r10b.d) + " (" + o2 + " → " + d10 + ").");
+      }
+      var gt = gruposDe(r);
+      var gi = 0;
+      for (var i3 = 1; i3 < gt.length; i3++) if (gt[i3] > gt[gi]) gi = i3;
+      if (gi > 0 && gt[gi] > 0) fatos.push("<strong>Fonte dominante:</strong> " + GRUPOS[gi].tit + " — " + resumo(gt[gi]) + ".");
+    }
+    $("achados-list").innerHTML = fatos.map(function (f) { return "<li>" + f + "</li>"; }).join("");
+  }
+
+  /* ---- ligações ---- */
+  /* leitura de valores da evolução: hover nas colunas atualiza o painel */
+  $("evo-single").addEventListener("mousemove", function (e) {
+    var col = e.target.closest && e.target.closest(".evo-col");
+    if (!col || !S1) return;
+    var i = Array.prototype.indexOf.call(col.parentNode.children, col);
+    if (S1[i]) $("evo-readout").innerHTML = roHtml(S1[i]);
+  });
+  $("evo-single").addEventListener("mouseleave", function () {
+    if (S1) $("evo-readout").innerHTML = roHtml(S1[IDXD]);
+  });
+
+  /* ---- visibilidade: análises gerais (ranking, mapas nacionais) só no escopo Brasil ---- */
+  function renderVisible() {
+    var br = +selUF.value < 0;
+    ["ranking", "mapa"].forEach(function (id) {
+      $(id).style.display = br ? "" : "none";
+    });
+    ["nl-ranking", "nl-mapa", "dir-ranking", "dir-mapa", "cobertura-card"].forEach(function (id) {
+      $(id).hidden = !br;
+    });
+  }
+
+  /* ---- contorno ampliado do estado do escopo + localização ---- */
+  function renderEstadoMapa() {
+    var ui = +selUF.value;
+    var card = $("estado-card");
+    card.hidden = ui < 0;
+    var locBox = $("estado-loc");
+    if (ui < 0) { locBox.innerHTML = ""; $("estado-shape").innerHTML = ""; return; }
+    var sigla = CODE2SIGLA[UFS[ui][0]];
+    var label = UFS[ui][1];
+    $("ec-zoom-lbl").textContent = "Contorno da UF: " + label;
+    var d = null;
+    DADOS.mapa.locs.forEach(function (l) { if (l[0] === sigla) d = l[1]; });
+    if (!d) return;
+    /* mini-Brasil visível para obter a bounding box (via getBBox) */
+    locBox.innerHTML = "";
+    var svgLoc = document.createElementNS(svgNS, "svg");
+    svgLoc.setAttribute("viewBox", DADOS.mapa.viewBox);
+    var pLoc = null;
+    DADOS.mapa.locs.forEach(function (l) {
+      var p = document.createElementNS(svgNS, "path");
+      p.setAttribute("d", l[1]);
+      p.id = "el-" + l[0];
+      p.setAttribute("fill", l[0] === sigla ? "var(--forest)" : "#e4e9e3");
+      svgLoc.appendChild(p);
+      if (l[0] === sigla) pLoc = p;
+    });
+    locBox.appendChild(svgLoc);
+    /* zoom */
+    var zBox = $("estado-shape");
+    zBox.innerHTML = "";
+    var svgZ = document.createElementNS(svgNS, "svg");
+    var pZ = document.createElementNS(svgNS, "path");
+    pZ.setAttribute("d", d);
+    pZ.setAttribute("fill", "var(--forest)");
+    pZ.setAttribute("stroke", "var(--forest-dark)");
+    pZ.setAttribute("stroke-width", "1");
+    svgZ.appendChild(pZ);
+    zBox.appendChild(svgZ);
+    try {
+      var bb = pLoc.getBBox();
+      var pad = Math.max(bb.width, bb.height) * 0.03;
+      svgZ.setAttribute("viewBox", (bb.x - pad) + " " + (bb.y - pad) + " " + (bb.width + 2 * pad) + " " + (bb.height + 2 * pad));
+    } catch (e) {
+      svgZ.setAttribute("viewBox", DADOS.mapa.viewBox);
+    }
+  }
+
+  function renderAll() {
+    try { location.hash = selO.value + "-" + selD.value + (+selUF.value < 0 ? "" : "-" + CODE2SIGLA[UFS[+selUF.value][0]]); } catch (e) {}
+    renderVisible();
+    renderEstadoMapa();
+    var r = renderResumo();
+    renderRanking(r);
+    renderEstrutura(r);
+    renderComp(r.v, r.dv, "comp-bar", "comp-legend");
+    renderComp(r.d, r.dd, "comp-bar-d", "comp-legend-d");
+    renderMapa();
+    renderGrupos();
+    renderMatriz();
+    renderFicha();
+    renderEvo();
+    renderAchados();
+  }
+
+  selO.addEventListener("change", function () { opcoesDestino(); renderAll(); });
+  selD.addEventListener("change", renderAll);
+  selUF.addEventListener("change", function () {
+    if (MODO !== "um") setModo("um");   // trocar o escopo volta ao padrão: um estado
+    renderAll();
+  });
+
+  try {
+    window.addEventListener("resize", function () {
+      clearTimeout(rzT);
+      rzT = setTimeout(function () { renderEvo(); }, 180);
+    });
+  } catch (e) {}
+
+  $("cob-zero").textContent = SEM_DADOS.join(" · ") || "—";
+  $("cob-zero2").textContent = SEM_DADOS.join(", ") || "—";
+
+  renderAll();
+  (function () {
+    var btns = null;
+    try { btns = document.querySelectorAll(".rod-copiar"); } catch (e) {}
+    if (btns) {
+      Array.prototype.forEach.call(btns, function (b) {
+        b.addEventListener("click", function () {
+          var m = b.getAttribute("data-mail");
+          function pronto() { b.textContent = "copiado ✓"; setTimeout(function () { b.textContent = "copiar"; }, 1400); }
+          try {
+            if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(m).then(pronto, pronto);
+            else pronto();
+          } catch (e) { pronto(); }
+        });
+      });
+    }
+  })();
+
+  (function () {
+    var aviso = $("aviso-console");
+    var visto = false;
+    try { visto = localStorage.getItem("soja39-dica-console") === "1"; } catch (e) {}
+    if (!visto) {
+      aviso.hidden = false;
+      aviso.classList.add("pulsando");
+    }
+    $("aviso-fechar").addEventListener("click", function () {
+      aviso.hidden = true;
+      try { localStorage.setItem("soja39-dica-console", "1"); } catch (e) {}
+    });
+  })();
+})();
+/*</inline>*/
+</script>
+
+</body>
+</html>

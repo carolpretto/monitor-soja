@@ -1,0 +1,25 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Piaui,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,37.108527105712895
+Piaui,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,1822.6517622494227
+Piaui,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,184.69556837825985
+Piaui,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,0.8016332214355468
+Piaui,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,14.543650231933595
+Piaui,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,2313.1487225373394
+Piaui,Virou soja (origem = uso no ano de origem),20.0,Cana,2024,2025.0,6.592395684814456
+Piaui,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,11627.59805971184
+Piaui,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,1.3290773376464842
+Piaui,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,208.71883468319135
+Piaui,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,4.345226751708984
+Piaui,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,3893.9780603635786
+Piaui,Virou soja (origem = uso no ano de origem),75.0,Usina Fotovoltaica,2024,2025.0,0.17724382934570312
+Piaui,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,2.4798723571777344
+Piaui,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,31.18729375610352
+Piaui,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,0.354952294921875
+Piaui,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,166.3681182120529
+Piaui,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,304.2155508850098
+Piaui,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,10.442538159179687
+Piaui,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,3.531315063476562
+Piaui,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,0.353981005859375
+Piaui,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,10.88970609741211
+Piaui,Deixou de ser soja (destino = uso no ano de destino),75.0,Usina Fotovoltaica,2024,2025.0,162.89728427734417
+Piaui,Permaneceu soja,39.0,Soja,2024,2025.0,1145771.4306482081

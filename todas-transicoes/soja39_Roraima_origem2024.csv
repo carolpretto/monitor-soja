@@ -1,0 +1,25 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Roraima,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,58.58514721679692
+Roraima,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2024,2025.0,34.907800653076166
+Roraima,Virou soja (origem = uso no ano de origem),6.0,Floresta Alagável,2024,2025.0,6.161324389648437
+Roraima,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,94.62125855102542
+Roraima,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,1282.033174149792
+Roraima,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,220.29485806884762
+Roraima,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,655.1376557704311
+Roraima,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,6.962061193847655
+Roraima,Virou soja (origem = uso no ano de origem),31.0,Aquicultura,2024,2025.0,1.1603080200195317
+Roraima,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,5.714582183837891
+Roraima,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,91.40689333496093
+Roraima,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,4.8210874267578125
+Roraima,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2024,2025.0,3.8388057006835936
+Roraima,Deixou de ser soja (destino = uso no ano de destino),6.0,Floresta Alagável,2024,2025.0,1.8751117614746093
+Roraima,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,2.231717590332031
+Roraima,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,12.855421990966796
+Roraima,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,249.82335375976564
+Roraima,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,229.06664712340108
+Roraima,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,3.035766387939453
+Roraima,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,1.3392455505371093
+Roraima,Deixou de ser soja (destino = uso no ano de destino),31.0,Aquicultura,2024,2025.0,0.446195263671875
+Roraima,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,20.0885287109375
+Roraima,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,5.356854266357421
+Roraima,Permaneceu soja,39.0,Soja,2024,2025.0,152734.70104232963

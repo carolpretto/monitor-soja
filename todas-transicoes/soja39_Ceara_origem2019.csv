@@ -1,0 +1,52 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Ceara,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2019,2020.0,0.8034012390136719
+Ceara,Virou soja (origem = uso no ano de origem),23.0,"Praia, Duna e Areal",2019,2020.0,0.0892854248046875
+Ceara,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2019,2020.0,5.4455717773437495
+Ceara,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2019,2020.0,1.3386417907714843
+Ceara,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2019,2020.0,0.8926493957519531
+Ceara,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2019,2020.0,33.01767543334956
+Ceara,Permaneceu soja,39.0,Soja,2019,2020.0,6.695917437744139
+Ceara,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2019,2021.0,0.8034012390136719
+Ceara,Virou soja (origem = uso no ano de origem),23.0,"Praia, Duna e Areal",2019,2021.0,0.0892854248046875
+Ceara,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2019,2021.0,0.17857061767578125
+Ceara,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2019,2021.0,5.4455717773437495
+Ceara,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2019,2021.0,1.3386417907714843
+Ceara,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2019,2021.0,0.8033641174316406
+Ceara,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2019,2021.0,33.01767543334956
+Ceara,Permaneceu soja,39.0,Soja,2019,2021.0,6.785202716064452
+Ceara,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2019,2022.0,10.08380004272461
+Ceara,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2019,2022.0,6.7835329528808614
+Ceara,Virou soja (origem = uso no ano de origem),23.0,"Praia, Duna e Areal",2019,2022.0,0.0892854248046875
+Ceara,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2019,2022.0,0.08928529663085938
+Ceara,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2019,2022.0,17.13600805053711
+Ceara,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2019,2022.0,1.249406005859375
+Ceara,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2019,2022.0,0.2678560852050781
+Ceara,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2019,2022.0,18.472219488525386
+Ceara,Permaneceu soja,39.0,Soja,2019,2022.0,21.95540247802734
+Ceara,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2019,2023.0,10.440755017089845
+Ceara,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2019,2023.0,6.069517871093751
+Ceara,Virou soja (origem = uso no ano de origem),23.0,"Praia, Duna e Areal",2019,2023.0,0.0892854248046875
+Ceara,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2019,2023.0,0.08928529663085938
+Ceara,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2019,2023.0,17.582116656494144
+Ceara,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2019,2023.0,1.249406005859375
+Ceara,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2019,2023.0,0.2678560852050781
+Ceara,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2019,2023.0,18.472219488525386
+Ceara,Permaneceu soja,39.0,Soja,2019,2023.0,21.955402478027338
+Ceara,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2019,2024.0,10.797739306640626
+Ceara,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2019,2024.0,7.408530041503908
+Ceara,Virou soja (origem = uso no ano de origem),23.0,"Praia, Duna e Areal",2019,2024.0,0.0892854248046875
+Ceara,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2019,2024.0,0.17857061767578125
+Ceara,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2019,2024.0,18.831710217285156
+Ceara,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2019,2024.0,1.7848481506347658
+Ceara,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2019,2024.0,0.892624493408203
+Ceara,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2019,2024.0,18.38294812011718
+Ceara,Permaneceu soja,39.0,Soja,2019,2024.0,20.884463293457024
+Ceara,Virou soja (origem = uso no ano de origem),4.0,Formação Savânica,2019,2025.0,13.82385092163086
+Ceara,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2019,2025.0,9.982390533447267
+Ceara,Virou soja (origem = uso no ano de origem),23.0,"Praia, Duna e Areal",2019,2025.0,0.0892854248046875
+Ceara,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2019,2025.0,0.17857061767578125
+Ceara,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2019,2025.0,20.074676092529295
+Ceara,Deixou de ser soja (destino = uso no ano de destino),4.0,Formação Savânica,2019,2025.0,1.7848481506347658
+Ceara,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2019,2025.0,0.892624493408203
+Ceara,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2019,2025.0,18.38294812011718
+Ceara,Permaneceu soja,39.0,Soja,2019,2025.0,20.884463293457024

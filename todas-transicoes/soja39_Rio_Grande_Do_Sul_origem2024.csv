@@ -1,0 +1,36 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2024,2025.0,1977.381957283912
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),9.0,Silvicultura,2024,2025.0,3267.3204548457834
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,36.654280029296885
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),12.0,Formação Campestre,2024,2025.0,6813.197582296696
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2024,2025.0,2073.880134655139
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2024,2025.0,149742.0684427725
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),23.0,"Praia, Duna e Areal",2024,2025.0,10.668668273925782
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2024,2025.0,6.501685516357424
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2024,2025.0,121.33325286865235
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2024,2025.0,325.3885150749894
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),40.0,Arroz,2024,2025.0,80069.3052885017
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2024,2025.0,29794.276313585662
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),48.0,Outras Lavouras Perenes,2024,2025.0,63.72833137817382
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),49.0,Restinga Arbórea,2024,2025.0,0.1544303771972656
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),50.0,Restinga Herbácea ou Arbustiva,2024,2025.0,2.300146405029297
+Rio Grande Do Sul,Virou soja (origem = uso no ano de origem),91.0,Parque eólico (beta),2024,2025.0,1.123588342285156
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),3.0,Formação Florestal,2024,2025.0,1269.7771776834882
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),9.0,Silvicultura,2024,2025.0,166.02976047363285
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),11.0,Campo Alagado e Área Pantanosa,2024,2025.0,64.19144650268554
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),12.0,Formação Campestre,2024,2025.0,1650.784338210234
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2024,2025.0,1217.2585644111666
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2024,2025.0,7605.923499466531
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),23.0,"Praia, Duna e Areal",2024,2025.0,5.157265258789063
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2024,2025.0,334.39350208407546
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2024,2025.0,73.35427047729492
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),30.0,Mineração,2024,2025.0,0.3082307434082031
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),31.0,Aquicultura,2024,2025.0,0.6318756958007813
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),33.0,"Rio, Lago e Oceano",2024,2025.0,354.82389422435114
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),40.0,Arroz,2024,2025.0,96785.14517022703
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),41.0,Outras Lavouras Temporárias,2024,2025.0,327.35583603513237
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),48.0,Outras Lavouras Perenes,2024,2025.0,5.418720379638672
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),49.0,Restinga Arbórea,2024,2025.0,1.0023710327148438
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),50.0,Restinga Herbácea ou Arbustiva,2024,2025.0,4.234368676757812
+Rio Grande Do Sul,Deixou de ser soja (destino = uso no ano de destino),91.0,Parque eólico (beta),2024,2025.0,2.779006469726563
+Rio Grande Do Sul,Permaneceu soja,39.0,Soja,2024,2025.0,6580514.9299794035

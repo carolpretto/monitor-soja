@@ -1,0 +1,23 @@
+estado,transicao,classe_id,classe_nome,ano_origem,ano_destino,area_ha
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2023,2024.0,0.6157165710449218
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2023,2024.0,900.7846240661632
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2023,2024.0,1.055395751953125
+Acre,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2023,2024.0,0.5286477844238281
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2023,2024.0,9.592859179687498
+Acre,Virou soja (origem = uso no ano de origem),33.0,"Rio, Lago e Oceano",2023,2024.0,0.35198070678710935
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2023,2024.0,1145.8675550598186
+Acre,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2023,2024.0,11.092735620117189
+Acre,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2023,2024.0,0.088044287109375
+Acre,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2023,2024.0,0.08790729370117188
+Acre,Permaneceu soja,39.0,Soja,2023,2024.0,5916.639236932907
+Acre,Virou soja (origem = uso no ano de origem),3.0,Formação Florestal,2023,2025.0,0.6157165710449218
+Acre,Virou soja (origem = uso no ano de origem),15.0,Pastagem,2023,2025.0,900.6958039794935
+Acre,Virou soja (origem = uso no ano de origem),21.0,Mosaico de Usos,2023,2025.0,1.055395751953125
+Acre,Virou soja (origem = uso no ano de origem),24.0,Área Urbanizada,2023,2025.0,0.2642359680175781
+Acre,Virou soja (origem = uso no ano de origem),25.0,Outras Áreas não Vegetadas,2023,2025.0,9.857262860107419
+Acre,Virou soja (origem = uso no ano de origem),41.0,Outras Lavouras Temporárias,2023,2025.0,1146.3952317382855
+Acre,Deixou de ser soja (destino = uso no ano de destino),15.0,Pastagem,2023,2025.0,11.092735620117189
+Acre,Deixou de ser soja (destino = uso no ano de destino),21.0,Mosaico de Usos,2023,2025.0,0.088044287109375
+Acre,Deixou de ser soja (destino = uso no ano de destino),24.0,Área Urbanizada,2023,2025.0,0.08813734130859376
+Acre,Deixou de ser soja (destino = uso no ano de destino),25.0,Outras Áreas não Vegetadas,2023,2025.0,0.08790729370117188
+Acre,Permaneceu soja,39.0,Soja,2023,2025.0,5916.5510995915965
